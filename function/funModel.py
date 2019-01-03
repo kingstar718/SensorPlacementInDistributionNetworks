@@ -9,9 +9,10 @@
 import numpy as np
 from abc import ABCMeta, abstractmethod
 
-#父亲抽象类
+
+# 父亲抽象类
 class objectFun(object):
-    #定义为抽象类
+    # 定义为抽象类
     __metaclass__=ABCMeta
 
     def __init__(self, population):
@@ -27,12 +28,12 @@ class objectFun(object):
 
 
 ########################################## 
-#子代 二目标函数抽象类
+# 子代 二目标函数抽象类
 class objectFun_2(objectFun):
-    #定义为抽象类
+    # 定义为抽象类
     __metaclass__=ABCMeta
 
-    #目标函数个数
+    # 目标函数个数
     objFunNum=2
 
     @abstractmethod
@@ -43,7 +44,7 @@ class objectFun_2(objectFun):
     def objFun_2(self):
         pass
   
-#子代 三目标函数抽象类
+# 子代 三目标函数抽象类
 class objectFun_3(objectFun):
     #定义为抽象类
     __metaclass__=ABCMeta

@@ -20,10 +20,10 @@ belta=0.2
 # np.random.seed(0)
 
 # 测试population
-population = population(500, 30, 809)
+population = population(200, 40, 809)
 functionObject = MinMax(population)
 
-for i in range(500):
+for i in range(200):
     f_population = population.copy()   # 浅拷贝
     selection(population, functionObject)   # 选择
     crossover(population, alfa)     # 交叉

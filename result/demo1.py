@@ -8,7 +8,7 @@ filename2 = "result2.csv"
 filename3 = "result3.csv"
 filename4 = "result4.csv"
 filename5 = "3node50gen.csv"
-df = pd.read_csv(filename5,header=None,sep=",",names=["最短监测时间","未被覆盖的比例"])
+df = pd.read_csv(filename5,header=None,sep=",",names=["最短监测时间", "未被覆盖的比例"])
 #print(df)
 #fig = plt.figure()
 #np.set_printoptions(suppress=True)
