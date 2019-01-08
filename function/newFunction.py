@@ -30,6 +30,10 @@ class MinMax(objectFun_2):
             p_list.append(p_result)     # 返回个体总的监测时间  越小越好
         return p_list
 
+    # 记录每个节点污染被检测到的时间
+
+
+
     def objFun_2(self):
         def perfect_pareto_front(self):  # 将csv中的数据拿出来,构成一个[[0 0 0.5] [0 0 0.5] [0.458 0.154 0.2545]...]这样的矩阵
             with open('D:/Git/nsga2_python-master/SensorPlacementInDistributionNetworks/test8092.csv', encoding='utf8') as file:
