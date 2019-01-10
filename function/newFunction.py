@@ -4,6 +4,7 @@ import numpy as np
 from funModel import *
 import csv
 from population_init import population
+from matchArray import matchArray
 # 以下为具体实现函数
 # 需要用户自定义函数，继承与上面的模板抽象函数
 
@@ -40,6 +41,7 @@ class MinMax(objectFun_2):
                 p = [list(map(float, row)) for row in csv.reader(file)]
                 return np.array(p)
         p = perfect_pareto_front(self)
+        """
         result = []
         for x in self.population:
             l = []
@@ -56,7 +58,13 @@ class MinMax(objectFun_2):
             m = float('%.3f' % m)   # 乘以1000000使目标值相似
             result.append(m)  # 将目标二的值放入list    # 返回未能监测到的事件比例  越小越好
             m = 0
-        return result
+        """
+        p_res = []
+        for x in self.population:
+            for p1 in p:
+                m = matchArray(p1, x)
+                p_res.append(m)
+        return p_res
 
 
 #######################################################
@@ -75,7 +83,7 @@ if __name__ == "__main__":
     print(p)
     m = MinMax(p)
     print(m.objFun_1())
-    print(m.objFun_2())
+    #print(m.objFun_2())
 
 
 
