@@ -5,7 +5,7 @@ from population_init import population
 
 def fitness_pop(pop):
     def perfect_pareto_front():  # 将csv中的数据拿出来,构成一个[[0 0 0.5] [0 0 0.5] [0.458 0.154 0.2545]...]这样的矩阵
-        with open('D:/Git/nsga2_python-master/SensorPlacementInDistributionNetworks/demo1.csv', encoding='utf8') as file:
+        with open('D:/Git/nsga2_python-master/SensorPlacementInDistributionNetworks/timematrix.csv', encoding='utf8') as file:
             p = [list(map(float, row)) for row in csv.reader(file)]
             return np.array(p)
 
@@ -86,7 +86,7 @@ def fitness(x):
 
 
 def perfect_pareto_front():     # 将csv中的数据拿出来,构成一个[[0 0 0.5] [0 0 0.5] [0.458 0.154 0.2545]...]这样的矩阵
-    with open('./demo1.csv', encoding='utf8') as file:
+    with open('./timematrix.csv', encoding='utf8') as file:
         p = [list(map(float, row)) for row in csv.reader(file)]
         return np.array(p)
 

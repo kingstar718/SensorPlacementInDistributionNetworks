@@ -1,10 +1,10 @@
-from rptOperate import split_file
+from splitfile import split_file
 import numpy as np
 
 
 # 将EPANET报告的水质信息生成矩阵
 #exepath, inpath, rptpath, nodenum, sourcequality, duration, qual_reportstep
-def generating_timelist(qwlist, nodenum, nodeCount, duration, qual_reportstep):
+def generate_timelist(qwlist, nodenum, nodeCount, duration, qual_reportstep):
     '''
     将EPANET报告的水质信息生成矩阵
     :param qwlist: 由split_file函数生成的list，存储了当前模拟节点的所有其他节点在不同时间的水质信息
@@ -99,7 +99,8 @@ print(a)
 if __name__ == "__main__":
     file = "out.rpt"
     l = split_file(file, 4, '  [0-9]')
-    t_list = generating_timelist(l,11,36,10800,600)
-    l2  =split_file("ky2.rpt",4,'  J')
-    t_lit2 = generating_timelist(l2,55,809,10800,600)
-    print(t_lit2)
+    t_list = generate_timelist(l,11,36,10800,600)
+    print(t_list)
+    #l2  =split_file("ky2.rpt",4,'  J')
+    #t_lit2 = generate_timelist(l2,55,809,10800,600)
+    #print(t_lit2)

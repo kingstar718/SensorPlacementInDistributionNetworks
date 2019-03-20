@@ -2,7 +2,7 @@ import os
 
 
 def command_line(exepath, inpath, rptpath, nodenum, sourcequality, duration, qual_reportstep):
-    '''
+    """
     :param exepath: EPANET的exe文件路径
     :param inpath: inp管网模型文件路径
     :param rptpath: 输出报告文件路径
@@ -11,7 +11,7 @@ def command_line(exepath, inpath, rptpath, nodenum, sourcequality, duration, qua
     :param duration: 水力模拟时长，单位s
     :param qual_reportstep: 水质模拟以及报告的间隔时长，单位s
     :return: 报告文件，路径由rptpath设置
-    '''
+    """
     # 需要将cmd命令写成如下形式   数值需要转化
     m = exepath+" "+inpath+" "+rptpath+" "+str(nodenum) + " " + str(sourcequality) + " " + str(duration) + " " +str(qual_reportstep)
     os.system(m)
