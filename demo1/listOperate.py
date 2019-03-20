@@ -5,6 +5,15 @@ import numpy as np
 # 将EPANET报告的水质信息生成矩阵
 #exepath, inpath, rptpath, nodenum, sourcequality, duration, qual_reportstep
 def generating_timelist(qwlist, nodenum, nodeCount, duration, qual_reportstep):
+    '''
+    将EPANET报告的水质信息生成矩阵
+    :param qwlist: 由split_file函数生成的list，存储了当前模拟节点的所有其他节点在不同时间的水质信息
+    :param nodenum: 当前发生污染的节点号
+    :param nodeCount: 管网模型总节点数
+    :param duration:  水力模拟时长
+    :param qual_reportstep: 水质模拟与输出报告时长
+    :return:
+    '''
     rpttimes = int(duration/qual_reportstep)    # 报告次数
     # 行数=次数*节点数  nodetimelist    nodetimelist
     resultlist1 = [list() for i in range(nodeCount)]  # 初始的list1列表，保存所有节点的时间信息，每行为节点，列号为报告时间
@@ -21,7 +30,7 @@ def generating_timelist(qwlist, nodenum, nodeCount, duration, qual_reportstep):
     nodetimelist = [0]*nodeCount     # 最后返回的矩阵，即当前节点注入污染时，其他所有节点初次发现污染物的时间，未发现的设为0，也可设为水力时间
     count = 0
     for i in resultlist1:
-        i = np.array(i)
+        #i = np.array(i)
         if i.sum() != 0:    # 排除没有都到污染的节点
             for v in i:
                 if v !=0:
