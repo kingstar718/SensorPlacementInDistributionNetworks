@@ -22,6 +22,7 @@ def split_file(rptfilepath, qualindex, regularmatch):
             waterqualitylist.append(float(line[qualindex]))     # 水质的索引列
     np.set_printoptions(suppress=True)      # 取消科学计数法
     waterqualitylist = np.array(waterqualitylist)  # 转化为np矩阵
+    f.close()
     return waterqualitylist
 
 '''
