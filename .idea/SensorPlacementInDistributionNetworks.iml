@@ -11,6 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/function" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/selection" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/data" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/demo1" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
