@@ -1,3 +1,4 @@
+# encoding:UTF-8
 from commandline import command_line
 from splitfile import split_file
 from generatetimelist import generate_timelist
@@ -28,8 +29,6 @@ def generate_timematrix(exepath, inpath, rptpath, sourcequality, duration, qual_
         timematrix.append(timelist)
         print("第 " ,nodenum, " 次生成时间矩阵")
     timematrix = np.array(timematrix)
-    test = pd.DataFrame(data=timematrix)
-    test.to_csv('test.csv', encoding='utf8',header=0,index=0)
     return timematrix
 
 
@@ -43,8 +42,10 @@ if __name__ == "__main__":
     qualindex1 = 4
     regularmatch1 = '  [0-9]'
     nodeCount1 = 36
-    #net2_matrix1 = generate_timematrix(exe1,input1,rpt1,sourcequality1,duration1,qual_reportstep1,qualindex1,regularmatch1,nodeCount1)
-    #print(net2_matrix1)
+    net2_matrix1 = generate_timematrix(exe1,input1,rpt1,sourcequality1,duration1,qual_reportstep1,qualindex1,regularmatch1,nodeCount1)
+    net2csv = pd.DataFrame(data=net2_matrix1)
+    net2csv.to_csv('./test/net2csv.csv', encoding='utf8',header=0,index=0)
+    print(net2csv)
 
     exe2 = "D:/迅雷下载/EPANETDEMO.exe"
     input2 = "D:/迅雷下载/ky2.inp"
@@ -55,5 +56,5 @@ if __name__ == "__main__":
     qualindex2 = 4
     regularmatch2 = '  J'
     nodeCount2 = 809
-    net2_matrix2 = generate_timematrix(exe2, input2, rpt2, sourcequality2, duration2, qual_reportstep2, qualindex2, regularmatch2, nodeCount2)
-    print(net2_matrix2)
+    #net2_matrix2 = generate_timematrix(exe2, input2, rpt2, sourcequality2, duration2, qual_reportstep2, qualindex2, regularmatch2, nodeCount2)
+    #print(net2_matrix2)

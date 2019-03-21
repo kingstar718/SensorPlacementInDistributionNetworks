@@ -1,3 +1,4 @@
+# encoding:UTF-8
 import os
 
 
@@ -18,22 +19,24 @@ def command_line(exepath, inpath, rptpath, nodenum, sourcequality, duration, qua
 
 
 if __name__ == "__main__":
+    exe1 = "./test/EPANETDEMO.exe"
+    input1 = "./test/Net2.inp"
+    rpt1 = "./test/Net2.rpt"
+    node1 = 11
+    sourcequality1 = 200000  # 投入的污染物mg数
+    duration1 = 10800  # 水力模拟时间参数
+    qual_reportstep1 = 600  # 水质步长与报告间隔时间
 
-    exe = "EPANETDEMO.exe"
-    input = "Net2.inp"
-    rpt = "out.rpt"
-    node = 11
 
+    exe2 = "./test/EPANETDEMO.exe"
+    input2 = "./test/ky2.inp"
+    rpt2 = "./test/ky2.rpt"
+    node2 = 55
+    sourcequality2 = 200000  # 投入的污染物mg数
+    duration2 = 10800  # 水力模拟时间参数
+    qual_reportstep2 = 600  # 水质步长与报告间隔时间
 
-    exe1 = "D:/迅雷下载/EPANETDEMO.exe"
-    input1 = "D:/迅雷下载/ky2.inp"
-    rpt1 = "D:/迅雷下载/ky2.rpt"
-    node1 = 55
-    sourcequality = 200000  # 投入的污染物mg数
-    duration = 10800  # 水力模拟时间参数
-    qual_reportstep = 600  # 水质步长与报告间隔时间
+    command_line(exe1, input1, rpt1, node1,sourcequality1, duration1, qual_reportstep1)
 
-    #command_line(exe1, input1, rpt1, node1,sourcequality,duration,qual_reportstep)
-
-    command_line(exe,input,rpt,node,sourcequality,duration,qual_reportstep)
+    command_line(exe2, input2, rpt2, node2, sourcequality2, duration2, qual_reportstep2)
 

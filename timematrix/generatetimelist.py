@@ -1,3 +1,4 @@
+# encoding:UTF-8
 from splitfile import split_file
 import numpy as np
 
