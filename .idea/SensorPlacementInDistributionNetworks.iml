@@ -9,6 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/data" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/timematrix" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/timematrix/test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/utils" isTestSource="false" />
     </content>
     <content url="file://D:/PythonProject">
       <sourceFolder url="file://D:/PythonProject" isTestSource="false" />
