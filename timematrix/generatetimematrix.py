@@ -33,28 +33,30 @@ def generate_timematrix(exepath, inpath, rptpath, sourcequality, duration, qual_
 
 
 if __name__ == "__main__":
-    exe1 = "D:/迅雷下载/EPANETDEMO.exe"
-    input1 = "D:/迅雷下载/Net2.inp"
-    rpt1 = "D:/迅雷下载/Net2.rpt"
+    exe1 = "F:/AWorkSpace/test/EPANETDEMO.exe"
+    input1 = "F:/AWorkSpace/test/Net2.inp"
+    rpt1 = "F:/AWorkSpace/test/Net2.rpt"
     sourcequality1 = 200000  # 投入的污染物mg数
     duration1 = 10800  # 水力模拟时间参数
     qual_reportstep1 = 600  # 水质步长与报告间隔时间
     qualindex1 = 4
     regularmatch1 = '  [0-9]'
     nodeCount1 = 36
-    net2_matrix1 = generate_timematrix(exe1,input1,rpt1,sourcequality1,duration1,qual_reportstep1,qualindex1,regularmatch1,nodeCount1)
-    net2csv = pd.DataFrame(data=net2_matrix1)
-    net2csv.to_csv('./test/net2csv.csv', encoding='utf8',header=0,index=0)
-    print(net2csv)
+    #net2_matrix1 = generate_timematrix(exe1,input1,rpt1,sourcequality1,duration1,qual_reportstep1,qualindex1,regularmatch1,nodeCount1)
+    #net2csv = pd.DataFrame(data=net2_matrix1)
+    #net2csv.to_csv('F:/AWorkSpace/test/net2csv.csv', encoding='utf8',header=0,index=0)
+    #print(net2csv)
 
-    exe2 = "D:/迅雷下载/EPANETDEMO.exe"
-    input2 = "D:/迅雷下载/ky2.inp"
-    rpt2 = "D:/迅雷下载/ky2.rpt"
+    exe2 = "F:/AWorkSpace/test/EPANETDEMO.exe"
+    input2 = "F:/AWorkSpace/test/ky2.inp"
+    rpt2 = "F:/AWorkSpace/test/ky2.rpt"
     sourcequality2 = 200000  # 投入的污染物mg数
     duration2 = 10800  # 水力模拟时间参数
     qual_reportstep2 = 600  # 水质步长与报告间隔时间
     qualindex2 = 4
     regularmatch2 = '  J'
     nodeCount2 = 809
-    #net2_matrix2 = generate_timematrix(exe2, input2, rpt2, sourcequality2, duration2, qual_reportstep2, qualindex2, regularmatch2, nodeCount2)
-    #print(net2_matrix2)
+    ky2_matrix2 = generate_timematrix(exe2, input2, rpt2, sourcequality2, duration2, qual_reportstep2, qualindex2, regularmatch2, nodeCount2)
+    ky2csv = pd.DataFrame(data=ky2_matrix2)
+    ky2csv.to_csv('F:/AWorkSpace/test/ky2csv.csv', encoding='utf8',header=0,index=0)
+    print(ky2csv)

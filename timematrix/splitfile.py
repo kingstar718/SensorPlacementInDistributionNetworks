@@ -35,7 +35,9 @@ def save_file(lister):      #  将传入的列表保存在新建文件中
 
 
 if __name__ == "__main__":
-    file = "out.rpt"
-    l = split_file(file, 4, '  [0-9]')
-    print(l)
-    print(len(l))
+    file1 = "F:/AWorkSpace/test/Net2node11.rpt"
+    file2 = "F:/AWorkSpace/test/ky2node55.rpt"
+    list1 = split_file(file1, 4, '  [0-9]')
+    list2= split_file(file2, 4, '  J')
+    print(list1)
+    print(list2)
