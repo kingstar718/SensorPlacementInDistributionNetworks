@@ -45,7 +45,6 @@ def main(exepath, inpath, rptpath, sourcequality, duration, qual_reportstep, qua
     for i in pop_node:
         print(i)
 
-
     funScore1 = np.vstack((functionObject.objFun_1(), functionObject.objFun_2()))
     np.set_printoptions(suppress=True)
     funScore = np.transpose(funScore1)
@@ -96,4 +95,5 @@ if __name__ == '__main__':
     qualindex2 = 4
     regularmatch2 = '  J'
     nodeCount2 = 809
+
     main(exe2,input2, rpt2, sourcequality2, duration2, qual_reportstep2, qualindex2, regularmatch2, nodeCount2, xN2, yN2, alfa2, belta2, iterationnum2)
