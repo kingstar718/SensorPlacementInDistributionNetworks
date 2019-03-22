@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../MachineLearning">
+      <sourceFolder url="file://$MODULE_DIR$/../MachineLearning" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../Python-Learning">
+      <sourceFolder url="file://$MODULE_DIR$/../Python-Learning/classdemo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../Python-Learning/threaddemo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../Python-Learning" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../Python-Learning/qtdemo" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/dominance" isTestSource="false" />

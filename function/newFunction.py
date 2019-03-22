@@ -10,10 +10,9 @@ from matchArray import matchArray
 
 
 class MinMax(objectFun_2):
-
     def objFun_1(self):
         def perfect_pareto_front(self):  # 将csv中的数据拿出来,构成一个[[0 0 0.5] [0 0 0.5] [0.458 0.154 0.2545]...]这样的矩阵
-            with open('D:/Git/nsga2_python-master/SensorPlacementInDistributionNetworks/test809.csv', encoding='utf8') as file:
+            with open('D:/Git/SensorPlacementInDistributionNetworks/data/test809.csv', encoding='utf8') as file:
                 p = [list(map(float, row)) for row in csv.reader(file)]
                 return np.array(p)
         p = perfect_pareto_front(self)
@@ -30,14 +29,12 @@ class MinMax(objectFun_2):
                 p_result = p_result + p_sum
             p_list.append(p_result)     # 返回个体总的监测时间  越小越好
         return p_list
-
     # 记录每个节点污染被检测到的时间
-
 
 
     def objFun_2(self):
         def perfect_pareto_front(self):  # 将csv中的数据拿出来,构成一个[[0 0 0.5] [0 0 0.5] [0.458 0.154 0.2545]...]这样的矩阵
-            with open('D:/Git/nsga2_python-master/SensorPlacementInDistributionNetworks/test8092.csv', encoding='utf8') as file:
+            with open('D:/Git/SensorPlacementInDistributionNetworks/data/test8092.csv', encoding='utf8') as file:
                 p = [list(map(float, row)) for row in csv.reader(file)]
                 return np.array(p)
         p = perfect_pareto_front(self)
@@ -67,9 +64,6 @@ class MinMax(objectFun_2):
         return p_res
 
 
-#######################################################
-
-
 # 测试函数  如下
 if __name__ == "__main__":
     #np.random.seed(0)
@@ -82,8 +76,8 @@ if __name__ == "__main__":
     p = population(100,50,809)
     print(p)
     m = MinMax(p)
-    print(m.objFun_1())
-    #print(m.objFun_2())
+    #print(m.objFun_1())
+    print(m.objFun_2())
 
 
 

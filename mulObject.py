@@ -23,7 +23,7 @@ belta=0.2
 population = population(200, 40, 809)
 functionObject = MinMax(population)
 
-for i in range(200):
+for i in range(100):
     f_population = population.copy()   # 浅拷贝
     selection(population, functionObject)   # 选择
     crossover(population, alfa)     # 交叉
