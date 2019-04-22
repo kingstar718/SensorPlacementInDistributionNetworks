@@ -23,9 +23,9 @@ def generate_timematrix(exepath, inpath, rptpath, sourcequality, duration, qual_
     timematrix = []
     for nodenum in range(nodeCount):
         nodenum = nodenum + 1
-        command_line(exepath, inpath, rptpath, nodenum, sourcequality, duration, qual_reportstep)
-        waterqualitylist = split_file(rptpath, qualindex, regularmatch)
-        timelist = generate_timelist(waterqualitylist, nodenum, nodeCount, duration, qual_reportstep)
+        command_line(exepath, inpath, rptpath, nodenum, sourcequality, duration, qual_reportstep) #命令行调用
+        waterqualitylist = split_file(rptpath, qualindex, regularmatch)  # 返回单个节点的污染时间信息
+        timelist = generate_timelist(waterqualitylist, nodenum, nodeCount, duration, qual_reportstep) # 单节点的监测时间list
         timematrix.append(timelist)
         print("第 " ,nodenum, " 次生成时间矩阵")
     timematrix = np.array(timematrix)
@@ -42,7 +42,7 @@ if __name__ == "__main__":
     qualindex1 = 4
     regularmatch1 = '  [0-9]'
     nodeCount1 = 36
-    #net2_matrix1 = generate_timematrix(exe1,input1,rpt1,sourcequality1,duration1,qual_reportstep1,qualindex1,regularmatch1,nodeCount1)
+    net2_matrix1 = generate_timematrix(exe1,input1,rpt1,sourcequality1,duration1,qual_reportstep1,qualindex1,regularmatch1,nodeCount1)
     #net2csv = pd.DataFrame(data=net2_matrix1)
     #net2csv.to_csv('F:/AWorkSpace/test/net2csv.csv', encoding='utf8',header=0,index=0)
     #print(net2csv)
@@ -56,7 +56,12 @@ if __name__ == "__main__":
     qualindex2 = 4
     regularmatch2 = '  J'
     nodeCount2 = 809
-    ky2_matrix2 = generate_timematrix(exe2, input2, rpt2, sourcequality2, duration2, qual_reportstep2, qualindex2, regularmatch2, nodeCount2)
-    ky2csv = pd.DataFrame(data=ky2_matrix2)
-    ky2csv.to_csv('F:/AWorkSpace/test/ky2csv.csv', encoding='utf8',header=0,index=0)
-    print(ky2csv)
+    #ky2_matrix2 = generate_timematrix(exe2, input2, rpt2, sourcequality2, duration2, qual_reportstep2, qualindex2, regularmatch2, nodeCount2)
+    #ky2csv = pd.DataFrame(data=ky2_matrix2)
+    #ky2csv.to_csv('F:/AWorkSpace/test/ky2csv.csv', encoding='utf8',header=0,index=0)
+    #print(ky2csv)
+
+    #cs = generate_timematrix(exe2, "F:/AWorkSpace/test/cs1102.inp", "F:/AWorkSpace/test/csrpt.rpt", sourcequality2, duration2, qual_reportstep2, qualindex2, '  [0-9]', 66373)
+    #print(cs)
+    #cscsv = pd.DataFrame(data=cs)
+    #cscsv.to_csv('F:/AWorkSpace/test/cscsv.csv', encoding='utf8',header=0,index=0)

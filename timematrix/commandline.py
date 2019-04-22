@@ -39,3 +39,9 @@ if __name__ == "__main__":
     qual_reportstep2 = 600  # 水质步长与报告间隔时间
     command_line(exe2, input2, rpt2, node2, sourcequality2, duration2, qual_reportstep2)
 
+'''
+    import time
+    t1 = time.time()
+    command_line(exe1, "F:/AWorkSpace/test/cs1102.inp", "F:/AWorkSpace/test/csrpt.rpt", 200, 200000, 36000, 600)
+    print(time.time()-t1)
+'''

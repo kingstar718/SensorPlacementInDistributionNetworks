@@ -27,7 +27,7 @@ def main(exepath, inpath, rptpath, sourcequality, duration, qual_reportstep, qua
         mutation(pop, belta, nodeCount-1)  # 变异
         c_population = pop
         temp_population = np.vstack((f_population, c_population))  # 合并两个数组
-        functionObject = MinMax(pop, timematrix)
+        functionObject = MinMax(temp_population, timematrix)
         pop = dominanceMain(temp_population, functionObject)  # 从合并种群中返回一半好的种群
         print("第", i, "次迭代")
         # print(population)
@@ -58,14 +58,14 @@ def main(exepath, inpath, rptpath, sourcequality, duration, qual_reportstep, qua
 
 
 if __name__ == '__main__':
-    '''
+
     # 200个个体, 30个变量， 变量数值范围0到2**14
     # 交叉概率0.6， 编译概率0.1
     xN1 = 200
     yN1 = 8
     alfa1= 0.9
     belta1 = 0.2
-    iterationnum1 = 1000
+    iterationnum1 = 300
 
     exe1 = "F:/AWorkSpace/test/EPANETDEMO.exe"
     input1 = "F:/AWorkSpace/test/Net2.inp"
@@ -87,7 +87,7 @@ if __name__ == '__main__':
     # random.seed(0)
     # np.random.seed(0)
     exe2 = "F:/AWorkSpace/test/EPANETDEMO.exe"
-    input2 = "F:/AWorkSpace/test/ky2.inp"
+    input2 = "F:/AWorkSpace/test/ky2utf8.inp"
     rpt2 = "F:/AWorkSpace/test/ky2.rpt"
     sourcequality2 = 200000  # 投入的污染物mg数
     duration2 = 36000  # 水力模拟时间参数  36000
@@ -97,3 +97,4 @@ if __name__ == '__main__':
     nodeCount2 = 809
 
     main(exe2,input2, rpt2, sourcequality2, duration2, qual_reportstep2, qualindex2, regularmatch2, nodeCount2, xN2, yN2, alfa2, belta2, iterationnum2)
+    '''

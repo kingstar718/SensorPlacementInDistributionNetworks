@@ -28,6 +28,7 @@ def generate_timelist(qwlist, nodenum, nodeCount, duration, qual_reportstep):
                 resultlist1[k].append(0)
     resultlist1 = np.array(resultlist1)
     resultlist1[nodenum-1][0] = 1    # 污染注入节点时间设为1
+    #resultlist1[nodenum ][0] = 1
     nodetimelist = [0]*nodeCount     # 最后返回的矩阵，即当前节点注入污染时，其他所有节点初次发现污染物的时间，未发现的设为0，也可设为水力时间
     count = 0
     for i in resultlist1:

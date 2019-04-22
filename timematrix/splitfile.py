@@ -11,7 +11,8 @@ def split_file(rptfilepath, qualindex, regularmatch):
     :param regularmatch: 提取所有节点信息所需要的正则表达式
     :return: 当前节点在水力模拟时长内的每个报告时间点的水质信息list
     '''
-    f = open(rptfilepath,"r")
+    #f = open(rptfilepath,"r",encoding='utf-8')
+    f = open(rptfilepath, "r")
     filelist = f.readlines()
     waterqualitylist = []
     pattern = re.compile(regularmatch)    # 正则匹配 只选取有节点数据的行

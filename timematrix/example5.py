@@ -1,32 +1,41 @@
-#coding:utf-8
+# coding:utf-8
 
+import threading
+import time
 from splitfile import split_file
 from  generatetimelist import generate_timelist
 from commandline import command_line
-import threading
 
-'''
-def thread1(sun):
-    s = str("node%d.rpt"% sun)
-    print(s)
 
-for i in range(10):
-    t = threading.Thread(target=thread1, args=(i,))
+class MyThread(threading.Thread):
+    def __init__(self, arg):
+        super(MyThread, self).__init__() # #注意：一定要显式的调用父类的初始化函数。
+        self.arg = arg
+
+    def run(self):
+        time.sleep(1)
+        print("MyThread the arg is : %s\r" % self.arg)
+
+class EPAThread(threading.Thread):
+    def __init__(self, node, nodeSum, infile):
+        super(EPAThread, self).__init__() # #注意：一定要显式的调用父类的初始化函数。
+        self.node = node
+        self.nodeSum = nodeSum
+        self.infile = infile
+
+
+    def run(self ):
+        exe1 = "F:/AWorkSpace/test/EPANETDEMO.exe"
+        input1 = "F:/AWorkSpace/test/Net2.inp"
+        outRpt = "F:/AWorkSpace/test/pare/node%d.rpt" % self.node
+        command_line(exe1,input1, outRpt, self.node, 20000, 10800, 600)
+
+
+        print(outRpt)
+
+for i in range(4):
+    t = EPAThread(i,4,4)
     t.start()
-    '''
-'''
-def threaddemo(count):
-    count  = int(count)
-    for i in range(10):
-        #if (count+i) <= 85:
-        print(count+i)
-    print(threading.currentThread().getName())
-
-for i in range(10):
-    i = i*10
-    t = threading.Thread(target=threaddemo, args=(i,))
-    t.start()
-    '''
 
 if __name__ == "__main__":
     '''
@@ -41,7 +50,7 @@ if __name__ == "__main__":
     ky2node55_list = generate_timelist(list2, 55, 809, 10800, 600)
     print(Net2node11_list)
     print(ky2node55_list)
-    
+
     # Test1
     exe1 = "F:/AWorkSpace/test/EPANETDEMO.exe"
     input1 = "F:/AWorkSpace/test/Net2.inp"
