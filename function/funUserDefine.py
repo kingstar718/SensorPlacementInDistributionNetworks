@@ -12,11 +12,6 @@ class MinMax(objectFun_2):
         self.timematrix = timematrix
 
     def objFun_1(self):
-        #def perfect_pareto_front(self):  # 将csv中的数据拿出来,构成一个[[0 0 0.5] [0 0 0.5] [0.458 0.154 0.2545]...]这样的矩阵
-            #with open('D:/Git/SensorPlacementInDistributionNetworks/data/test809.csv', encoding='utf8') as file:
-                #p = [list(map(float, row)) for row in csv.reader(file)]
-                #return np.array(p)
-        #p = perfect_pareto_front(self)
         p = self.timematrix     # 时间矩阵
         p_list = []
         for x in self.population:   #population为种群  x为个体  i为一个节点索引
@@ -33,11 +28,6 @@ class MinMax(objectFun_2):
         return p_list
 
     def objFun_2(self):
-        #def perfect_pareto_front(self):  # 将csv中的数据拿出来,构成一个[[0 0 0.5] [0 0 0.5] [0.458 0.154 0.2545]...]这样的矩阵
-            #with open('D:/Git/SensorPlacementInDistributionNetworks/data/test8092.csv', encoding='utf8') as file:
-                #p = [list(map(float, row)) for row in csv.reader(file)]
-                #return np.array(p)
-        #p = perfect_pareto_front(self)
         p_timematrix = self.timematrix
         unmonitoredresult = []
 
@@ -56,15 +46,13 @@ class MinMax(objectFun_2):
         return unmonitoredresult
 
 
-#######################################################
-
-
 # 测试函数  如下
 if __name__ == "__main__":
     from timematrix.generatetimematrix import generate_timematrix
     import csv
     from population_init import population
     import numpy as np
+    import pandas as pd
     #np.random.seed(0)
     #zdt1=ZDT1(np.random.rand(20, 3))    #　生成行２０列３的随机矩阵
     #print("objFun_1",zdt1.objFun_1())
@@ -89,6 +77,7 @@ if __name__ == "__main__":
     print(net2_value.objFun_2())
     '''
 
+    '''
     exe2 = "F:/AWorkSpace/test/EPANETDEMO.exe"
     input2 = "F:/AWorkSpace/test/ky2.inp"
     rpt2 = "F:/AWorkSpace/test/ky2.rpt"
@@ -105,6 +94,13 @@ if __name__ == "__main__":
     p = population(100,50,809)
 
     m = MinMax(p,ky2_matrix2)
+    print(m.objFun_1())
+    print(m.objFun_2())'''
+    matrixpath = "D:\\Git\\SensorPlacementInDistributionNetworks\\timematrix\\max.csv"
+    matrix = pd.read_csv(matrixpath, header=None)
+    matrix = np.array(matrix)
+    p = population(100, 50, 3628)
+    m = MinMax(p, matrix)
     print(m.objFun_1())
     print(m.objFun_2())
 
