@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # encoding:UTF-8
 from funModel import *
-
-
+from itertools import chain
+import pandas as pd
 # 以下为具体实现函数
 # 需要用户自定义函数，继承与上面的模板抽象函数
 class MinMax(objectFun_2):
@@ -44,6 +44,72 @@ class MinMax(objectFun_2):
             unmonitored = float('%.3f' % unmonitored)   # 乘以1000000使目标值相似
             unmonitoredresult.append(unmonitored)  # 将目标二的值放入list    # 返回未能监测到的事件比例  越小越好
         return unmonitoredresult
+
+class computeMatrix():
+    def __init__(self, matrixpath):
+        self.matrixpath = matrixpath
+        self.matrix = pd.read_csv(self.matrixpath, header=None)
+        self.timematrix = np.array(self.matrix)
+
+    def computeNodeDirt(self):
+        nodeDirt = {}
+        for i in range(self.timematrix.shape[1]):
+            #print(self.timematrix[:, i])
+            nodeName = []
+            nodeTime = []
+            twoList = []
+            for n,m in enumerate(self.timematrix[:, i]):
+                # print(n,m)
+                if m!=0:
+                    nodeName.append(n)
+                    nodeTime.append(m)
+            #print("节点%d"%i , nodeName, nodeTime)
+            if len(nodeTime)==0:
+                timeSum = 0
+            else:
+                timeSum = sum(nodeTime) / len(nodeTime)
+            twoList.append(nodeName)
+            twoList.append(timeSum)
+            nodeDirt[i] = twoList
+            #print(i, twoList)
+        print(nodeDirt)
+        return nodeDirt
+
+
+class MinMax2(objectFun_2):
+
+    def __init__(self, population, nodeDirt):
+        objectFun_2.__init__(self, population)
+        self.nodeDirt = nodeDirt
+
+    def objFun_1(self):
+        pDirt = self.nodeDirt  # 时间字典
+        p_list = []
+        for x in self.population:  # population为种群  x为个体  i为一个节点索引
+            p_result = []
+            for i in x:
+                p_result.append(pDirt[i][1])
+            nodeTime = sum(p_result)/len(x)
+            p_list.append(nodeTime)  # 返回个体平均的监测时间  越小越好
+        return p_list
+
+    def objFun_2(self):
+        pDirt = self.nodeDirt  # 时间字典
+        unmonitoredresult = []
+
+        for x in self.population:
+            monitorednode = []
+            for i in x:
+                monitorednode.append(pDirt[i][0])
+            monitorednode = set(list(chain(*monitorednode)))
+            monitored = len(monitorednode)/len(pDirt)
+            unmonitored = 1 - monitored
+            unmonitored = float('%.3f' % unmonitored)
+            unmonitoredresult.append(unmonitored)
+        return unmonitoredresult
+
+
+
 
 
 # 测试函数  如下
@@ -99,10 +165,21 @@ if __name__ == "__main__":
     matrixpath = "D:\\Git\\SensorPlacementInDistributionNetworks\\timematrix\\max.csv"
     matrix = pd.read_csv(matrixpath, header=None)
     matrix = np.array(matrix)
-    p = population(100, 50, 3628)
+    p = population(200, 80, 3628)
+    import time
+    start = time.time()
     m = MinMax(p, matrix)
+
     print(m.objFun_1())
     print(m.objFun_2())
+    print("目标函数计算时间: ", time.time() - start)
+
+    nodeDirt = computeMatrix(matrixpath).computeNodeDirt()
+    sss = time.time()
+    m2 = MinMax2(p, nodeDirt)
+    print(m2.objFun_1())
+    print(m2.objFun_2())
+    print("目标函数计算时间: ", time.time()-sss)
 
 
 
