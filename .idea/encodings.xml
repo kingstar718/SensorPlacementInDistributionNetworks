@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/ky2.inp" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/timematrix/commandline.py" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/timematrix/test/Net2.inp" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/timematrix/test/ky2.inp" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/timematrix/test/ky2.rpt" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/timematrix/test/out.rpt" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
