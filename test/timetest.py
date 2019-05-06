@@ -92,5 +92,8 @@ if __name__=="__main__":
     matrixpath = "D:\\Git\\SensorPlacementInDistributionNetworks\\timematrix\\max.csv"
     #computeNgsaTime(p, matrixpath)
     #computeDirt(matrixpath)
-    m = computeMatrix(matrixpath).computeNodeDirt()
+    #m = computeMatrix(matrixpath).computeNodeDirt()
+    #print(m[1][1])
+    reMatrix = "..//timematrix//max.csv"
+    m = computeMatrix(reMatrix).computeNodeDirt()
     print(m[1][1])

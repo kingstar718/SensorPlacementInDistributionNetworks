@@ -70,7 +70,8 @@ if __name__ == '__main__':
     yN1 = 100
     alfa1= 0.9
     belta1 = 0.2
-    iterationnum1 = 1000
+    iterationnum1 = 3000
     nodeCount1 = 3628
-    matrixpath = "D:\\Git\\SensorPlacementInDistributionNetworks\\timematrix\\max.csv"
+    #matrixpath = "D:\\Git\\SensorPlacementInDistributionNetworks\\timematrix\\max.csv"
+    matrixpath = "timematrix//max.csv"
     main(nodeCount1, xN1,yN1,alfa1, belta1, iterationnum1)
