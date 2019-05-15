@@ -76,8 +76,8 @@ class computeMatrix():
         return nodeDirt
 
 
+# 使用字典先行存储信息, 使用时直接拿出来
 class MinMax2(objectFun_2):
-
     def __init__(self, population, nodeDirt):
         objectFun_2.__init__(self, population)
         self.nodeDirt = nodeDirt
@@ -108,6 +108,47 @@ class MinMax2(objectFun_2):
             unmonitoredresult.append(unmonitored)
         return unmonitoredresult
 
+
+# 设置每个节点带有权重的目标函数计算
+class MinMax3(objectFun_2):
+
+    def __init__(self, population, nodeDirt):
+        objectFun_2.__init__(self, population)
+        self.nodeDirt = nodeDirt
+
+    # 时间计算
+    def objFun_1(self):
+        pDirt = self.nodeDirt  # 时间字典
+        p_list = []
+        for x in self.population:  # population为种群  x为个体  i为一个节点索引
+            p_result = []
+            for i in x:
+                #nodeTime = pDirt[i][1]
+                #CPnodeTime = nodeTime*float(pDirt[i][2])*10000      # 将概率添加进去
+                #p_result.append(CPnodeTime)
+                p_result.append(pDirt[i][1])
+            nodeTime = sum(p_result)/len(x)
+            p_list.append(nodeTime)  # 返回个体平均的监测时间  越小越好
+        return p_list
+
+    # 覆盖率计算
+    def objFun_2(self):
+        pDirt = self.nodeDirt  # 时间字典
+        unmonitoredresult = []
+
+        for x in self.population:
+            monitorednode = []
+            for i in x:
+                monitorednode.append(pDirt[i][0])
+            monitorednode = set(list(chain(*monitorednode)))
+            monitored = 0
+            for i in monitorednode:
+                monitored = monitored + float(pDirt[i][2])
+            #monitored = len(monitorednode)/len(pDirt)
+            unmonitored = 1 - monitored
+            unmonitored = float('%.3f' % unmonitored)
+            unmonitoredresult.append(unmonitored)
+        return unmonitoredresult
 
 
 
@@ -142,7 +183,6 @@ if __name__ == "__main__":
     print(net2_value.objFun_1())
     print(net2_value.objFun_2())
     '''
-
     '''
     exe2 = "F:/AWorkSpace/test/EPANETDEMO.exe"
     input2 = "F:/AWorkSpace/test/ky2.inp"

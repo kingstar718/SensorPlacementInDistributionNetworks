@@ -19,7 +19,7 @@ def main(nodeCount,xN, yN, alfa, belta, iterationnum):
     pop = population(xN, yN, nodeCount)
     matrix = pd.read_csv(matrixpath, header=None)
     timematrix = np.array(matrix)
-    nodeDirt = computeMatrix(matrixpath).computeNodeDirt()
+    #nodeDirt = computeMatrix(matrixpath).computeNodeDirt()
     #  计算目标函数
     functionObject = MinMax2(pop, nodeDirt)     # 第二种方式计算
     #functionObject = MinMax(pop, timematrix)
