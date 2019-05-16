@@ -20,8 +20,13 @@ def main(nodeCount,xN, yN, alfa, belta, iterationnum):
     matrix = pd.read_csv(matrixpath, header=None)
     timematrix = np.array(matrix)
     #nodeDirt = computeMatrix(matrixpath).computeNodeDirt()
+    import json
+    jsonFile = "F:\\AWorkSpace\\data\\3628node.json"
+    with open(jsonFile, "r") as f:
+        nodeJson = json.load(f)
+    nodeDirt2 = json.loads(nodeJson)
     #  计算目标函数
-    functionObject = MinMax2(pop, nodeDirt)     # 第二种方式计算
+    functionObject = MinMax3(pop, nodeDirt2)     # 第二种方式计算
     #functionObject = MinMax(pop, timematrix)
 
     for i in range(iterationnum):
@@ -32,7 +37,7 @@ def main(nodeCount,xN, yN, alfa, belta, iterationnum):
         c_population = pop
         temp_population = np.vstack((f_population, c_population))  # 合并两个数组
         #functionObject = MinMax(temp_population, timematrix)
-        functionObject = MinMax2(temp_population, nodeDirt)
+        functionObject = MinMax3(temp_population, nodeDirt2)
         pop = dominanceMain(temp_population, functionObject)  # 从合并种群中返回一半好的种群
         print("第", i, "次迭代")
         # print(population)
@@ -70,7 +75,7 @@ if __name__ == '__main__':
     yN1 = 100
     alfa1= 0.9
     belta1 = 0.2
-    iterationnum1 = 3000
+    iterationnum1 = 500
     nodeCount1 = 3628
     #matrixpath = "D:\\Git\\SensorPlacementInDistributionNetworks\\timematrix\\max.csv"
     matrixpath = "timematrix//max.csv"
