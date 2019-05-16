@@ -21,7 +21,7 @@ def main(nodeCount,xN, yN, alfa, belta, iterationnum):
     timematrix = np.array(matrix)
     #nodeDirt = computeMatrix(matrixpath).computeNodeDirt()
     import json
-    jsonFile = "F:\\AWorkSpace\\data\\3628node.json"
+    jsonFile = "F:\\AWorkSpace\\data\\3628node2.json"
     with open(jsonFile, "r") as f:
         nodeJson = json.load(f)
     nodeDirt2 = json.loads(nodeJson)

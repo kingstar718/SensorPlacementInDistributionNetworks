@@ -142,11 +142,15 @@ class MinMax3(objectFun_2):
                 monitorednode.append(pDirt[str(i)][0])
             monitorednode = set(list(chain(*monitorednode)))
             monitored = 0
+            # 3 以管长*管径来计算概率
+            for i in monitorednode:
+                monitored = monitored + float(pDirt[str(i)][3])
             '''
+            # 2 单以管长来计算
             for i in monitorednode:
             monitored = monitored + float(pDirt[str(i)][2])
             '''
-            monitored = len(monitorednode)*(1/3628)
+            # monitored = len(monitorednode)*(1/3628)       # 1.平均概率
             #monitored = len(monitorednode)/len(pDirt)
             unmonitored = 1 - monitored
             unmonitored = float('%.3f' % unmonitored)
