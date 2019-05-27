@@ -1,0 +1,1331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8ba68522-57b7-4d3d-ba5d-9a98c3cd4c03" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/SensorPlacementInDistributionNetworks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SensorPlacementInDistributionNetworks.iml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ademo$dominance.coverage" NAME="dominance Coverage Results" MODIFIED="1542097785951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dominance" />
+    <SUITE FILE_PATH="coverage/ademo$demo1__1_.coverage" NAME="demo1 (1) Coverage Results" MODIFIED="1542270079282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SensorPlacementInDistributionNetworks$mulObject.coverage" NAME="mulObject Coverage Results" MODIFIED="1542986597132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SensorPlacementInDistributionNetworks$crowddist.coverage" NAME="crowddist Coverage Results" MODIFIED="1542875805393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dominance" />
+    <SUITE FILE_PATH="coverage/ademo$population_init.coverage" NAME="population_init Coverage Results" MODIFIED="1542161604345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SensorPlacementInDistributionNetworks$809node.coverage" NAME="809node Coverage Results" MODIFIED="1543478973383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/ademo$funUserDefine.coverage" NAME="funUserDefine Coverage Results" MODIFIED="1542162129208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/function" />
+    <SUITE FILE_PATH="coverage/ademo$crowddist.coverage" NAME="crowddist Coverage Results" MODIFIED="1542167028280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dominance" />
+    <SUITE FILE_PATH="coverage/SensorPlacementInDistributionNetworks$thread.coverage" NAME="thread Coverage Results" MODIFIED="1554704844678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/timematrix" />
+    <SUITE FILE_PATH="coverage/ademo$rank.coverage" NAME="rank Coverage Results" MODIFIED="1542097128227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dominance" />
+    <SUITE FILE_PATH="coverage/ademo$dominance1.coverage" NAME="dominance1 Coverage Results" MODIFIED="1542160289300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dominance" />
+    <SUITE FILE_PATH="coverage/SensorPlacementInDistributionNetworks$dominance1.coverage" NAME="dominance1 Coverage Results" MODIFIED="1542610816646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dominance" />
+    <SUITE FILE_PATH="coverage/ademo$crossover.coverage" NAME="crossover Coverage Results" MODIFIED="1542297306739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SensorPlacementInDistributionNetworks$dominanceMain.coverage" NAME="dominanceMain Coverage Results" MODIFIED="1542889237703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dominance" />
+    <SUITE FILE_PATH="coverage/SensorPlacementInDistributionNetworks$demo4.coverage" NAME="demo4 Coverage Results" MODIFIED="1554973888241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Python-Learning/wntrdemo" />
+    <SUITE FILE_PATH="coverage/SensorPlacementInDistributionNetworks$io.coverage" NAME="io Coverage Results" MODIFIED="1555056670648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/UsualSoft/Anaconda3/Lib/site-packages/wntr/epanet" />
+    <SUITE FILE_PATH="coverage/SensorPlacementInDistributionNetworks$newFunction.coverage" NAME="newFunction Coverage Results" MODIFIED="1547128197253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/function" />
+    <SUITE FILE_PATH="coverage/ademo$dominanceMain.coverage" NAME="dominanceMain Coverage Results" MODIFIED="1542160172580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dominance" />
+    <SUITE FILE_PATH="coverage/ademo$estimate.coverage" NAME="estimate Coverage Results" MODIFIED="1542160406095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dominance" />
+    <SUITE FILE_PATH="coverage/ademo$selection.coverage" NAME="selection Coverage Results" MODIFIED="1542097525239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selection" />
+    <SUITE FILE_PATH="coverage/ademo$demo1.coverage" NAME="demo1 Coverage Results" MODIFIED="1542331651119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/ademo$demo1__2_.coverage" NAME="demo1 (2) Coverage Results" MODIFIED="1542332586187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/result" />
+    <SUITE FILE_PATH="coverage/SensorPlacementInDistributionNetworks$funUser.coverage" NAME="funUser Coverage Results" MODIFIED="1542614075067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dominance/fun" />
+    <SUITE FILE_PATH="coverage/SensorPlacementInDistributionNetworks$demo2.coverage" NAME="demo2 Coverage Results" MODIFIED="1554890459883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Python-Learning/wntrdemo" />
+    <SUITE FILE_PATH="coverage/SensorPlacementInDistributionNetworks$demo1__1_.coverage" NAME="demo1 (1) Coverage Results" MODIFIED="1555056703678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Python-Learning/wntrdemo" />
+    <SUITE FILE_PATH="coverage/SensorPlacementInDistributionNetworks$fileread.coverage" NAME="fileread Coverage Results" MODIFIED="1556181377106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/timematrix" />
+    <SUITE FILE_PATH="coverage/SensorPlacementInDistributionNetworks$fileRead.coverage" NAME="fileRead Coverage Results" MODIFIED="1555990745302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Python-Learning/wntrdemo" />
+    <SUITE FILE_PATH="coverage/SensorPlacementInDistributionNetworks$generatetimematrix.coverage" NAME="generatetimematrix Coverage Results" MODIFIED="1553842804487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/timematrix" />
+    <SUITE FILE_PATH="coverage/SensorPlacementInDistributionNetworks$funUserDefine.coverage" NAME="funUserDefine Coverage Results" MODIFIED="1553222690522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/function" />
+    <SUITE FILE_PATH="coverage/ademo$mulObject.coverage" NAME="mulObject Coverage Results" MODIFIED="1542331376250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ademo$mutation.coverage" NAME="mutation Coverage Results" MODIFIED="1542297281628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ademo$funUser.coverage" NAME="funUser Coverage Results" MODIFIED="1542160781181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dominance/fun" />
+    <SUITE FILE_PATH="coverage/SensorPlacementInDistributionNetworks$demo5.coverage" NAME="demo5 Coverage Results" MODIFIED="1555569949583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Python-Learning/wntrdemo" />
+    <SUITE FILE_PATH="coverage/SensorPlacementInDistributionNetworks$SimplifyNetwork.coverage" NAME="SimplifyNetwork Coverage Results" MODIFIED="1556271573705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Python-Learning/wntrdemo" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1607451650">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.21" value="3" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="csv" value="10" />
+          <entry key="py" value="53" />
+          <entry key="text" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSV" value="10" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="53" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="csv" value="1" />
+          <entry key="dummy" value="1" />
+          <entry key="py" value="4109" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSV" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="4109" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="225576726">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="12" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.23" value="3" />
+          <entry key="project.open.time.24" value="4" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="4" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="22" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="bak" value="1" />
+          <entry key="csv" value="29" />
+          <entry key="html" value="14" />
+          <entry key="md" value="1" />
+          <entry key="py" value="184" />
+          <entry key="sql" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSV" value="29" />
+          <entry key="HTML" value="14" />
+          <entry key="Markdown" value="1" />
+          <entry key="Python" value="185" />
+          <entry key="SQL" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="22" />
+          <entry key="html" value="422" />
+          <entry key="md" value="129" />
+          <entry key="py" value="8035" />
+          <entry key="txt" value="147" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="422" />
+          <entry key="Markdown" value="129" />
+          <entry key="PLAIN_TEXT" value="169" />
+          <entry key="Python" value="8035" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1202207560">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="16" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.22" value="2" />
+          <entry key="project.open.time.23" value="3" />
+          <entry key="project.open.time.24" value="2" />
+          <entry key="project.open.time.25" value="5" />
+          <entry key="project.open.time.26" value="3" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.29" value="2" />
+          <entry key="project.open.time.30" value="2" />
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="32" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Python Console" value="2" />
+          <entry key="csv" value="3" />
+          <entry key="demo6" value="2" />
+          <entry key="dummy" value="107" />
+          <entry key="md" value="85" />
+          <entry key="py" value="43556" />
+          <entry key="txt" value="172" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSV" value="3" />
+          <entry key="Markdown" value="85" />
+          <entry key="PLAIN_TEXT" value="279" />
+          <entry key="Python" value="43556" />
+          <entry key="SQL" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="1" value="1" />
+          <entry key="bak" value="1" />
+          <entry key="csv" value="32" />
+          <entry key="inp" value="54" />
+          <entry key="md" value="5" />
+          <entry key="png" value="2" />
+          <entry key="py" value="561" />
+          <entry key="pyi" value="1" />
+          <entry key="rpt" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSV" value="32" />
+          <entry key="Image" value="2" />
+          <entry key="Markdown" value="5" />
+          <entry key="PLAIN_TEXT" value="68" />
+          <entry key="Python" value="562" />
+          <entry key="PythonStub" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="SensorPlacementInDistributionNetworks" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dominance/dominanceMain.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+              <folding>
+                <element signature="e#38#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dominance/rank.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dominance/estimate.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dominance/dominance1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="936">
+              <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Python-Learning/spiderdemo/ch-1-beautifulsoup.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Python-Learning/spiderdemo/ch-2-beautifulsoup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="466">
+              <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../Python-Learning/spiderdemo/ch-3-urllib.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="47" column="84" selection-start-line="47" selection-start-column="84" selection-end-line="47" selection-end-column="84" />
+              <folding>
+                <element signature="e#16#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/redisDemo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/jsondemo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="672">
+              <caret line="28" column="18" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/fileRead.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>7:50:00</find>
+      <find>continue</find>
+      <find>print</find>
+      <find>length</find>
+      <find>PIP</find>
+      <find>pattern</find>
+      <find>Mn</find>
+      <find>dataname</find>
+      <find>degree</find>
+      <find>10</find>
+      <find>is_string_like</find>
+      <find>J-1</find>
+      <find>PowerPump</find>
+      <find>len</find>
+      <find>float_format</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../MachineLearning/code/day1_data_preprocessing.py" />
+        <option value="$PROJECT_DIR$/../MachineLearning/code/day3_Multiple_Linear_Regression.py" />
+        <option value="$PROJECT_DIR$/../MachineLearning/code/day2_Simple_Linear_Regression.py" />
+        <option value="$PROJECT_DIR$/../MachineLearning/code/大于.py" />
+        <option value="$PROJECT_DIR$/../MachineLearning/code/day4_Logistic_Regression.py" />
+        <option value="$PROJECT_DIR$/../MachineLearning/code/day5_SVM.py" />
+        <option value="$PROJECT_DIR$/newMain.py" />
+        <option value="D:/UsualSoft/Anaconda3/Lib/site-packages/matplotlib/__init__.py" />
+        <option value="$PROJECT_DIR$/../MachineLearning/ML/ch_1_classify.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/mapreduceDemo.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/multiprocessingDemo.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/redisDemo.py" />
+        <option value="$PROJECT_DIR$/../MachineLearning/ML/ch-2-SVM.py" />
+        <option value="$PROJECT_DIR$/../MachineLearning/ML/ch_3_SVM_regression.py" />
+        <option value="$PROJECT_DIR$/../MachineLearning/ML/ch_4_Decision_Tree.py" />
+        <option value="$PROJECT_DIR$/../MachineLearning/ML/ch_5_Random_Forests.py" />
+        <option value="$PROJECT_DIR$/../MachineLearning/ML/ch_6_oneclassSVM.py" />
+        <option value="$PROJECT_DIR$/timematrix/fileread.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/tkinter/ch_2_gui.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/spiderdemo/demo1.py" />
+        <option value="$PROJECT_DIR$/population_init.py" />
+        <option value="$PROJECT_DIR$/test/timetest.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/demo7].py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/水质监测点（常熟）.csv" />
+        <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/SimplifyNetwork.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/networkXDemo.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/findData.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/drawNode.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/spiderdemo/cnblogspider.py" />
+        <option value="$PROJECT_DIR$/data/drawNode.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/demo6.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/jsondemo.py" />
+        <option value="$PROJECT_DIR$/csMain.py" />
+        <option value="$PROJECT_DIR$/function/funUserDefine.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/fileRead.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/README.md" />
+        <option value="$PROJECT_DIR$/../Python-Learning/tkinter/ch_1_minapp.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/tkinter/ch-3-Label.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/tkinter/ch_3_Label.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/tkinter/ch_4_Button.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/tkinter/ch_5_Entry.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/tkinter/ch_6_Text.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/tkinter/ch_7_Listbox.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/qtdemo/def1.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/tkinter/SensorPlace.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/demo5.py" />
+        <option value="$PROJECT_DIR$/dominance/dominanceMain.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/demo7.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/processDemo.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/waterQualitySimulation.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/spiderdemo/ch-3-urllib.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="477" />
+    <option name="y" value="300" />
+    <option name="width" value="1449" />
+    <option name="height" value="732" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Internationalization</id>
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyUnreachableCodeInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="SensorPlacementInDistributionNetworks" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="SensorPlacementInDistributionNetworks" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="dominance" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="SensorPlacementInDistributionNetworks" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Git\Python-Learning" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="SensorPlacementInDistributionNetworks" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Git\Python-Learning" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="spiderdemo" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="SensorPlacementInDistributionNetworks" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Git\Python-Learning" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="wntrdemo" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SensorPlacementInDistributionNetworks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SensorPlacementInDistributionNetworks" type="47feb1d3:ProjectViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ToolWindowPython Console.ShowToolbar" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="F:/UsualSoft/CPLEX_Studio125/cplex/examples/src/python" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="SensorPlacementInDistributionNetworks" sdk-home="D:\UsualSoft\Anaconda3\python.exe">
+        <option name="mySdkHome" value="D:\UsualSoft\Anaconda3\python.exe" />
+        <option name="myModuleName" value="SensorPlacementInDistributionNetworks" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Git\Python-Learning\wntrdemo" />
+      <recent name="D:\Git\SensorPlacementInDistributionNetworks\data" />
+      <recent name="D:\Git\MachineLearning\ML\mldata" />
+      <recent name="D:\Git\MachineLearning\data" />
+      <recent name="D:\Git\SensorPlacementInDistributionNetworks\timematrix" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git\MachineLearning\ML\mldata" />
+      <recent name="D:\Git\SensorPlacementInDistributionNetworks\timematrix\test" />
+      <recent name="D:\Git\nsga2_python-master\SensorPlacementInDistributionNetworks\data" />
+      <recent name="D:\Git\nsga2_python-master\ademo\result" />
+      <recent name="D:\Git\nsga2_python-master\ademo" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.ch-3-urllib">
+    <configuration name="SensorPlace" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SensorPlacementInDistributionNetworks" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Python-Learning/tkinter" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Python-Learning/tkinter/SensorPlace.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="SensorPlacementInDistributionNetworks" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ch-3-urllib" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SensorPlacementInDistributionNetworks" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Python-Learning/spiderdemo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Python-Learning/spiderdemo/ch-3-urllib.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ch_1_minapp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SensorPlacementInDistributionNetworks" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Python-Learning/tkinter" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Python-Learning/tkinter/ch_1_minapp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="demo7" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SensorPlacementInDistributionNetworks" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Python-Learning/wntrdemo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Python-Learning/wntrdemo/demo7.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="redisDemo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SensorPlacementInDistributionNetworks" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Python-Learning/wntrdemo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Python-Learning/wntrdemo/redisDemo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.ch_1_minapp" />
+      <item itemvalue="Python.SensorPlace" />
+      <item itemvalue="Python.demo7" />
+      <item itemvalue="Python.redisDemo" />
+      <item itemvalue="Python.ch-3-urllib" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.ch-3-urllib" />
+        <item itemvalue="Python.redisDemo" />
+        <item itemvalue="Python.demo7" />
+        <item itemvalue="Python.SensorPlace" />
+        <item itemvalue="Python.ch_1_minapp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ba68522-57b7-4d3d-ba5d-9a98c3cd4c03" name="Default Changelist" comment="" />
+      <created>1542096863243</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542096863243</updated>
+    </task>
+    <task id="LOCAL-00001" summary="new function need to change">
+      <created>1546502867840</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1546502867840</updated>
+    </task>
+    <task id="LOCAL-00002" summary="matchArray function ready">
+      <created>1546936592259</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1546936592259</updated>
+    </task>
+    <task id="LOCAL-00003" summary="matchArray function ready and object_function1 has ready">
+      <created>1547128300438</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1547128300438</updated>
+    </task>
+    <task id="LOCAL-00004" summary="command &amp; rptFile generate time matrix">
+      <created>1553053526512</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1553053526512</updated>
+    </task>
+    <task id="LOCAL-00005" summary="readme">
+      <created>1553054644248</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1553054644248</updated>
+    </task>
+    <task id="LOCAL-00006" summary="参数注释">
+      <created>1553065417466</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1553065417466</updated>
+    </task>
+    <task id="LOCAL-00007" summary="添加close()关闭文件流">
+      <created>1553065481513</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1553065481513</updated>
+    </task>
+    <task id="LOCAL-00008" summary="generate time matrix code">
+      <created>1553072926926</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1553072926926</updated>
+    </task>
+    <task id="LOCAL-00009" summary="generate time matrix code">
+      <created>1553073537652</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1553073537652</updated>
+    </task>
+    <task id="LOCAL-00010" summary="generate time matrix code">
+      <created>1553130941233</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1553130941233</updated>
+    </task>
+    <task id="LOCAL-00011" summary="generate time matrix code">
+      <created>1553136889370</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1553136889370</updated>
+    </task>
+    <task id="LOCAL-00012" summary="index to node‘name">
+      <created>1553138331546</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1553138331546</updated>
+    </task>
+    <task id="LOCAL-00013" summary="index to node‘name">
+      <created>1553225745523</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1553225745523</updated>
+    </task>
+    <task id="LOCAL-00014" summary="index to node‘name">
+      <created>1553243325445</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1553243325445</updated>
+    </task>
+    <task id="LOCAL-00015" summary="new Main">
+      <created>1553243371269</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1553243371269</updated>
+    </task>
+    <task id="LOCAL-00016" summary="thread">
+      <created>1554714109322</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1554714109322</updated>
+    </task>
+    <task id="LOCAL-00017" summary="new Main">
+      <created>1555915774101</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1555915774101</updated>
+    </task>
+    <task id="LOCAL-00018" summary="cs Main">
+      <created>1556196065204</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1556196065204</updated>
+    </task>
+    <task id="LOCAL-00019" summary="新的时间矩阵计算方式">
+      <created>1557136194765</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1557136194766</updated>
+    </task>
+    <task id="LOCAL-00020" summary="新的目标函数计算方式, 使用先行计算+字典查找, 计算效率提升95%以上">
+      <created>1557136265023</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1557136265023</updated>
+    </task>
+    <task id="LOCAL-00021" summary="other change">
+      <created>1557137007060</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1557137007060</updated>
+    </task>
+    <task id="LOCAL-00022" summary="other change">
+      <created>1557209757070</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1557209757070</updated>
+    </task>
+    <task id="LOCAL-00023" summary="other change">
+      <created>1557916955827</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1557916955827</updated>
+    </task>
+    <task id="LOCAL-00024" summary="other change">
+      <created>1557989421074</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1557989421074</updated>
+    </task>
+    <task id="LOCAL-00025" summary="3 kinds pro">
+      <created>1557996780325</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1557996780326</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49462366" weight="0.32729468" />
+      <window_info id="Structure" order="1" sideWeight="0.50537634" side_tool="true" weight="0.182861" />
+      <window_info id="Favorites" order="2" sideWeight="0.50537634" side_tool="true" weight="0.182861" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3270073" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.43338212" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.37664235" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5033738" side_tool="true" weight="0.42627737" />
+      <window_info anchor="bottom" id="TODO" order="9" weight="0.3270073" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4979757" weight="0.28321168" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32846716" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="13" sideWeight="0.49662617" visible="true" weight="0.33868614" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.49341142" weight="0.28272605" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3299595" />
+      <window_info anchor="right" x="0" y="0" width="337" height="638" id="Documentation" order="5" sideWeight="0.5065886" side_tool="true" weight="0.2806191" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49931413" weight="0.17425227" />
+      <window_info id="Structure" order="1" sideWeight="0.5006859" side_tool="true" weight="0.22139972" />
+      <window_info id="Favorites" order="2" sideWeight="0.5006859" side_tool="true" weight="0.22139972" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3270073" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.43338212" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.37664235" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3292683" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5026991" side_tool="true" weight="0.35036495" />
+      <window_info anchor="bottom" id="TODO" order="10" weight="0.32761577" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.28321168" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49730095" visible="true" weight="0.46317512" />
+      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.49341142" weight="0.289987" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3299595" />
+      <window_info anchor="right" x="0" y="0" width="337" height="638" id="Documentation" order="5" sideWeight="0.5065886" side_tool="true" weight="0.2806191" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="SHOW_OTHER_BRANCHES" value="true" />
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new function need to change" />
+    <MESSAGE value="matchArray function ready" />
+    <MESSAGE value="matchArray function ready and object_function1 has ready" />
+    <MESSAGE value="command &amp; rptFile generate time matrix" />
+    <MESSAGE value="readme" />
+    <MESSAGE value="参数注释" />
+    <MESSAGE value="添加close()关闭文件流" />
+    <MESSAGE value="generate time matrix code" />
+    <MESSAGE value="index to node‘name" />
+    <MESSAGE value="thread" />
+    <MESSAGE value="new Main" />
+    <MESSAGE value="cs Main" />
+    <MESSAGE value="新的时间矩阵计算方式" />
+    <MESSAGE value="新的目标函数计算方式, 使用先行计算+字典查找, 计算效率提升95%以上" />
+    <MESSAGE value="other change" />
+    <MESSAGE value="3 kinds pro" />
+    <option name="LAST_COMMIT_MESSAGE" value="3 kinds pro" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/data/drawNode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="192">
+            <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/SimplifyNetwork.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/networkXDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/mapreduceDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/findData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="91" column="28" selection-start-line="91" selection-start-column="28" selection-end-line="91" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/classdemo/attrTest.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/classdemo/built-in_attributes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/classdemo/class_attr_method.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/classdemo/class_extends.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/classdemo/Employee.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/classdemo/object_recovery.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/classdemo/over_load.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/classdemo/Test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/demo1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/spiderdemo/demo1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/drawNode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/spiderdemo/cnblogspider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/qtdemo/ch-1-helloworld.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/tkinter/ch_5_Entry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/qtdemo/def1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/tkinter/ch_3_Label.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/tkinter/ch_2_gui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/tkinter/ch_7_Listbox.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="12" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/tkinter/ch_1_minapp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/tkinter/ch_4_Button.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/tkinter/ch_6_Text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="35" column="32" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/tkinter/SensorPlace.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/UsualSoft/Anaconda3/Lib/site-packages/wntr/network/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="566" column="8" selection-start-line="566" selection-start-column="8" selection-end-line="566" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/demo3.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/UsualSoft/Anaconda3/Lib/os.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="230" column="65" lean-forward="true" selection-start-line="230" selection-start-column="65" selection-end-line="230" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/population_init.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csMain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="37" column="63" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/demo7.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="17" selection-start-line="17" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function/matchArray.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function/funUserDefine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="140" column="23" lean-forward="true" selection-start-line="140" selection-start-column="23" selection-end-line="140" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/demo6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/demo4.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/multiprocessingDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/processDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/waterQualitySimulation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3288">
+          <caret line="142" selection-start-line="142" selection-end-line="142" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dominance/dominanceMain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <folding>
+            <element signature="e#38#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dominance/rank.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dominance/estimate.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dominance/dominance1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/spiderdemo/ch-1-beautifulsoup.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/redisDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/jsondemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/fileRead.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/spiderdemo/ch-2-beautifulsoup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/spiderdemo/ch-3-urllib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="47" column="84" selection-start-line="47" selection-start-column="84" selection-end-line="47" selection-end-column="84" />
+          <folding>
+            <element signature="e#16#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
