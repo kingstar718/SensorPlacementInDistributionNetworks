@@ -88,7 +88,7 @@ class MinMax2(objectFun_2):
         for x in self.population:  # population为种群  x为个体  i为一个节点索引
             p_result = []
             for i in x:
-                p_result.append(pDirt[i][1])
+                p_result.append(pDirt[str(i)][1])
             nodeTime = sum(p_result)/len(x)
             p_list.append(nodeTime)  # 返回个体平均的监测时间  越小越好
         return p_list
@@ -100,7 +100,7 @@ class MinMax2(objectFun_2):
         for x in self.population:
             monitorednode = []
             for i in x:
-                monitorednode.append(pDirt[i][0])
+                monitorednode.append(pDirt[str(i)][0])
             monitorednode = set(list(chain(*monitorednode)))
             monitored = len(monitorednode)/len(pDirt)
             unmonitored = 1 - monitored
@@ -135,22 +135,20 @@ class MinMax3(objectFun_2):
     def objFun_2(self):
         pDirt = self.nodeDirt  # 时间字典
         unmonitoredresult = []
-
         for x in self.population:
             monitorednode = []
             for i in x:
                 monitorednode.append(pDirt[str(i)][0])
             monitorednode = set(list(chain(*monitorednode)))
-            monitored = 0
+            '''
             # 3 以管长*管径来计算概率
             for i in monitorednode:
                 monitored = monitored + float(pDirt[str(i)][3])
-            '''
             # 2 单以管长来计算
             for i in monitorednode:
             monitored = monitored + float(pDirt[str(i)][2])
             '''
-            # monitored = len(monitorednode)*(1/3628)       # 1.平均概率
+            monitored = len(monitorednode)*(1/66383)       # 1.平均概率
             #monitored = len(monitorednode)/len(pDirt)
             unmonitored = 1 - monitored
             unmonitored = float('%.3f' % unmonitored)
