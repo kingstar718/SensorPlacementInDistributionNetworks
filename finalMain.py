@@ -44,7 +44,7 @@ class SensorPlacement():
     def iteration(self):
         """
         算法迭代主程序
-        :return:
+        :return: 最后迭代完成的排序,去重的种群
         """
         node_count  = len(self.read_json())
         pop = population(self.pop_size, self.individuals_num, node_count)
@@ -62,17 +62,26 @@ class SensorPlacement():
             pop = dominanceMain(temp_pop, func_obj)
             print("第 %d 次迭代" % i)
 
-        estimate(pop, func_obj)
-        pop_node = np.array(list(set([tuple(t) for t in pop])))
-        for i in pop_node:
+        # estimate(pop, func_obj)
+        pop_node = np.array(list(set([tuple(sorted(t)) for t in pop])))      #  个体按数值大小排序, 去重
+        return pop_node
+
+    def draw_node(self, pop_result):
+        for i in pop_result:
             print(i)
-        func_score = np.vstack((func_obj.objFun_1(), func_obj.objFun_2()))
+        list1 = []
+        func_obj = MinMax2(pop_result, self.read_json())
+        for i in func_obj.objFun_2():
+            m = 1-i
+            list1.append(m)
+        # func_score = np.vstack((func_obj.objFun_1(), func_obj.objFun_2()))
+        func_score = np.vstack((func_obj.objFun_1(), list1))
         np.set_printoptions(suppress=True)
         x = func_score[0]
         y = func_score[1]
         plt.scatter(x, y)
         plt.xlabel("min time")
-        plt.ylabel("uncovered")
+        plt.ylabel("covered")
         plt.show()
 
 
@@ -82,8 +91,10 @@ if __name__ == '__main__':
     # 交叉概率0.6， 编译概率0.1
     nodeCount1 = 3628
     jsonFile = "F:\\AWorkSpace\\Python-Learning-Data\\3628node2.json"
+    sp = SensorPlacement(jsonFile)
 
-    # SensorPlacement(nodeCount1, jsonFile).iteration()
-    print(len(SensorPlacement(jsonFile).read_json()))
+    node_result = sp.iteration()
+    sp.draw_node(node_result)
+    # print(len(SensorPlacement(jsonFile).read_json()))
 
 
