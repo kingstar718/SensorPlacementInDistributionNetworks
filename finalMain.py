@@ -63,7 +63,7 @@ class SensorPlacement():
             print("第 %d 次迭代" % i)
 
         # estimate(pop, func_obj)
-        pop_node = np.array(list(set([tuple(sorted(t)) for t in pop])))      #  个体按数值大小排序, 去重
+        pop_node = np.array(list(set([tuple(sorted(t)) for t in pop])))      # 个体按数值大小排序, 去重
         return pop_node
 
     def draw_node(self, pop_result):
@@ -91,10 +91,10 @@ if __name__ == '__main__':
     # 交叉概率0.6， 编译概率0.1
     nodeCount1 = 3628
     jsonFile = "F:\\AWorkSpace\\Python-Learning-Data\\3628node2.json"
-    sp = SensorPlacement(jsonFile)
+    jsonFile2 = "F:\\AWorkSpace\\data\\test\\final_json.json"   # 测试中json中的key和value中的list'内元素都为int
+    sp = SensorPlacement(jsonFile2)
 
     node_result = sp.iteration()
     sp.draw_node(node_result)
-    # print(len(SensorPlacement(jsonFile).read_json()))
 
 
