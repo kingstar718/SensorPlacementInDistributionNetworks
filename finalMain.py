@@ -92,9 +92,21 @@ if __name__ == '__main__':
     nodeCount1 = 3628
     jsonFile = "F:\\AWorkSpace\\Python-Learning-Data\\3628node2.json"
     jsonFile2 = "F:\\AWorkSpace\\data\\test\\final_json.json"   # 测试中json中的key和value中的list'内元素都为int
-    sp = SensorPlacement(jsonFile2)
+    jsonFile3 = "F:\\AWorkSpace\\Python-Learning-Data\\DDirtnode3.json"
+    # sp = SensorPlacement(jsonFile3, iterations_num=300)
 
-    node_result = sp.iteration()
-    sp.draw_node(node_result)
+    # node_result = sp.iteration()
+    # sp.draw_node(node_result)
 
+    """
+    import json   
+    with open(jsonFile3, "r") as f:
+        node_json = json.load(f)
+    node_dirt = json.loads(node_json)
+    l2 = []
+    from itertools import chain
+    for i in node_dirt.values():
+        l2.append(i[0])
+    l2 = set(list(chain(*l2)))
+    print(len(l2))"""
 

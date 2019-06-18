@@ -96,13 +96,18 @@ class MinMax2(objectFun_2):
     def objFun_2(self):
         pDirt = self.nodeDirt  # 时间字典
         unmonitoredresult = []
+        # 监测的总事件数
+        sum_thing = []
+        for i in pDirt.values():
+            sum_thing.append(i[0])
+        sum_thing = set(list(chain(*sum_thing)))
 
         for x in self.population:
             monitorednode = []
             for i in x:
                 monitorednode.append(pDirt[str(i)][0])
             monitorednode = set(list(chain(*monitorednode)))
-            monitored = len(monitorednode)/len(pDirt)
+            monitored = len(monitorednode) / len(sum_thing)
             unmonitored = 1 - monitored
             unmonitored = float('%.3f' % unmonitored)
             unmonitoredresult.append(unmonitored)
