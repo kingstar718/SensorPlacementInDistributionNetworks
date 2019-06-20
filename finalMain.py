@@ -12,8 +12,8 @@ from json import load, loads, dump, dumps
 
 
 class SensorPlacement():
-    def __init__(self, json_path, pop_size=500, individuals_num=100,
-                 cross_probability=0.8, mutation_probability=0.2, iterations_num=100):
+    def __init__(self, json_path=None, pop_size=500, individuals_num=100,
+                 cross_probability=0.8, mutation_probability=0.2, iterations_num=100, is_file=True, node_dirt=None):
         """
         初始化参数
         :param json_path: json数据位置
@@ -22,6 +22,8 @@ class SensorPlacement():
         :param cross_probability: 交叉概率
         :param mutation_probability: 变异概率
         :param iterations_num: 迭代次数
+        :param is_file: 是否为文件读取
+        :param node_dirt: 水质模拟的字典结果
         """
         self.pop_size = pop_size
         self.individuals_num = individuals_num
@@ -29,6 +31,7 @@ class SensorPlacement():
         self.mutation_probability = mutation_probability
         self.iterations_num = iterations_num
         self.json_path = json_path
+        self.node_dirt = node_dirt
 
     def read_json(self):
         """
@@ -36,9 +39,12 @@ class SensorPlacement():
         :return: dirt数据
         """
         # jsonFile = "F:\\AWorkSpace\\Python-Learning-Data\\3628node2.json"
-        with open(self.json_path, "r") as f:
-            node_json = load(f)
-        node_json = loads(node_json)
+        if self.node_dirt is None:
+            with open(self.json_path, "r") as f:
+                node_json = load(f)
+            node_json = loads(node_json)
+        else:
+            node_json = self.node_dirt
         return node_json
 
     def iteration(self):
@@ -49,7 +55,7 @@ class SensorPlacement():
         node_count  = len(self.read_json())
         pop = population(self.pop_size, self.individuals_num, node_count)
         node_dirt = self.read_json()
-        func_obj = MinMax3(pop, node_dirt)
+        func_obj = MinMax2(pop, node_dirt)
 
         for i in range(self.iterations_num):
             copy_pop = pop.copy()
@@ -58,11 +64,11 @@ class SensorPlacement():
             mutation(pop, self.mutation_probability, node_count-1)
             origin_pop = pop
             temp_pop = np.vstack((copy_pop, origin_pop))
-            func_obj = MinMax3(temp_pop, node_dirt)
+            func_obj = MinMax2(temp_pop, node_dirt)
             pop = dominanceMain(temp_pop, func_obj)
             print("第 %d 次迭代" % i)
 
-        # estimate(pop, func_obj)
+        estimate(pop, func_obj)
         pop_node = np.array(list(set([tuple(sorted(t)) for t in pop])))      # 个体按数值大小排序, 去重
         return pop_node
 
@@ -70,8 +76,8 @@ class SensorPlacement():
         for i in pop_result:
             print(i)
         list1 = []
-        func_obj = MinMax3(pop_result, self.read_json())
-        estimate(pop_result, func_obj)
+        func_obj = MinMax2(pop_result, self.read_json())
+        # estimate(pop_result, func_obj)
         for i in func_obj.objFun_2():
             m = 1-i
             list1.append(m)
