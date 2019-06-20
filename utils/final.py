@@ -1,5 +1,5 @@
-from utils.WaterQualitySim import WaterQualitySim
-from utils.WaterQualitySimData import WaterQualitySimData
+from utils.WaterQualitySim1 import WaterQualitySim
+from utils.WaterQualitySimData1 import WaterQualitySimData
 from finalMain import SensorPlacement
 
 
