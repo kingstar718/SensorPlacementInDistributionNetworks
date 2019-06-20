@@ -1,5 +1,5 @@
-from WaterQualitySim import WaterQualitySim
-from WaterQualitySimData import WaterQualitySimData
+from utils.WaterQualitySim import WaterQualitySim
+from utils.WaterQualitySimData import WaterQualitySimData
 from finalMain import SensorPlacement
 
 
@@ -12,6 +12,6 @@ if __name__=="__main__":
     new_dirt = WaterQualitySimData(node_dirt=node_dirt).change_number()
     print(len(new_dirt))
 
-    sp = SensorPlacement(node_dirt=new_dirt, individuals_num=10, iterations_num=500)
+    sp = SensorPlacement(node_dirt=new_dirt, individuals_num=10, iterations_num=100)
     node_result = sp.iteration()
     sp.draw_node(node_result)
