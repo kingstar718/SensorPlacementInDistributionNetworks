@@ -153,7 +153,11 @@ class MinMax3(objectFun_2):
             for i in monitorednode:
             monitored = monitored + float(pDirt[str(i)][2])
             '''
-            monitored = len(monitorednode)*(1/66383)       # 1.平均概率
+            monitored=0
+            for i in monitorednode:
+                monitored = monitored + float(pDirt[str(i)][4])
+            #monitored = len(monitorednode)*(1/66383)       # 1.平均概率
+
             #monitored = len(monitorednode)/len(pDirt)
             unmonitored = 1 - monitored
             unmonitored = float('%.3f' % unmonitored)
