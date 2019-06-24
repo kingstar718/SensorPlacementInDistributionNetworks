@@ -1,60 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ba68522-57b7-4d3d-ba5d-9a98c3cd4c03" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/SensorPlacementInDistributionNetworks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SensorPlacementInDistributionNetworks.iml" afterDir="false" />
+    <list default="true" id="8ba68522-57b7-4d3d-ba5d-9a98c3cd4c03" name="Default Changelist" comment="test">
+      <change afterPath="$PROJECT_DIR$/utils/IndexToNode.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crossover.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/crossover.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/csMain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/809node.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/demo1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/demo1111.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/demo2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/demo2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/demo3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/drawNode.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/net2report.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/net3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/test2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/test809.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/test8092.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dominance/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dominance/crowddist.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/crowddist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dominance/dominance1.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/dominance1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dominance/dominanceMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/dominanceMain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dominance/estimate.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/estimate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dominance/fun/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dominance/fun/funModel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dominance/fun/funUser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dominance/rank.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/rank.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/finalMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/finalMain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitness.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/function/funUserDefine.py" beforeDir="false" afterPath="$PROJECT_DIR$/function/funUserDefine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function/matchArray.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/function/newFunction.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mulObject.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mutation.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/mutation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/newMain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/population_init.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/population_init.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/3node50gen.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/demo1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/demo2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/result.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/result2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/result3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/result4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selection/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selection/fun/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selection/fun/funModel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selection/fun/funUser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selection/selection.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/selection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selection/selection.py.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/timetest.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/timetest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/WaterQualitySim1.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/WaterQualitySim.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/WaterQualitySimData1.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/WaterQualitySimData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newMain.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/final.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/final.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/indexandnode.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/indexandnode.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -249,7 +201,7 @@
           <entry key="demo6" value="2" />
           <entry key="dummy" value="114" />
           <entry key="md" value="264" />
-          <entry key="py" value="55619" />
+          <entry key="py" value="56020" />
           <entry key="txt" value="296" />
         </counts>
       </usages-collector>
@@ -258,7 +210,7 @@
           <entry key="CSV" value="3" />
           <entry key="Markdown" value="264" />
           <entry key="PLAIN_TEXT" value="410" />
-          <entry key="Python" value="55619" />
+          <entry key="Python" value="56020" />
           <entry key="SQL" value="4" />
         </counts>
       </usages-collector>
@@ -272,7 +224,7 @@
           <entry key="json" value="4" />
           <entry key="md" value="8" />
           <entry key="png" value="2" />
-          <entry key="py" value="889" />
+          <entry key="py" value="891" />
           <entry key="pyi" value="1" />
           <entry key="rpt" value="14" />
           <entry key="s" value="1" />
@@ -288,7 +240,7 @@
           <entry key="JSON" value="4" />
           <entry key="Markdown" value="8" />
           <entry key="PLAIN_TEXT" value="74" />
-          <entry key="Python" value="892" />
+          <entry key="Python" value="894" />
           <entry key="PythonStub" value="1" />
           <entry key="XML" value="1" />
         </counts>
@@ -303,11 +255,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/final.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="288">
+              <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
-                <marker date="1561340126781" expanded="true" signature="673:1371" ph="..." />
+                <marker date="1561381404084" expanded="true" signature="819:1517" ph="..." />
               </folding>
             </state>
           </provider>
@@ -316,8 +268,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/finalMain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="88" column="25" lean-forward="true" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
+            <state relative-caret-position="204">
+              <caret line="81" column="19" lean-forward="true" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
               <folding>
                 <element signature="e#40#76#0" expanded="true" />
               </folding>
@@ -325,12 +277,34 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/function/funModel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="192">
+              <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/indexandnode.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
-                <element signature="e#117#135#0" expanded="true" />
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/utils/IndexToNode.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+              <folding>
+                <marker date="1561381560092" expanded="true" signature="194:199" ph="..." />
               </folding>
             </state>
           </provider>
@@ -346,13 +320,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/newMain.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-216" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/WaterQualitySimData.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="96">
@@ -364,20 +331,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/WaterQualitySim.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="346">
+              <caret line="179" column="14" lean-forward="true" selection-start-line="179" selection-start-column="14" selection-end-line="179" selection-end-column="14" />
               <folding>
                 <element signature="e#17#53#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nsga2/rank.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -443,8 +401,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../Python-Learning/tkinter/ch-3-Label.py" />
-        <option value="$PROJECT_DIR$/../Python-Learning/tkinter/ch_3_Label.py" />
         <option value="$PROJECT_DIR$/../Python-Learning/tkinter/ch_4_Button.py" />
         <option value="$PROJECT_DIR$/../Python-Learning/tkinter/ch_5_Entry.py" />
         <option value="$PROJECT_DIR$/../Python-Learning/tkinter/ch_6_Text.py" />
@@ -478,7 +434,6 @@
         <option value="$PROJECT_DIR$/../Python-Learning/SensorPlace/fileRead.py" />
         <option value="$PROJECT_DIR$/function/funUserDefine.py" />
         <option value="$PROJECT_DIR$/../Python-Learning/SensorPlace/WaterQualitySim.py" />
-        <option value="$PROJECT_DIR$/finalMain.py" />
         <option value="$PROJECT_DIR$/../Python-Learning/SensorPlace/WaterQualitySimData.py" />
         <option value="$PROJECT_DIR$/final.py" />
         <option value="$PROJECT_DIR$/utils/WaterQualitySimData.py" />
@@ -489,11 +444,14 @@
         <option value="$PROJECT_DIR$/dominance/crowddist.py" />
         <option value="$PROJECT_DIR$/dominance/dominanceMain.py" />
         <option value="$PROJECT_DIR$/csMain.py" />
-        <option value="$PROJECT_DIR$/utils/final.py" />
         <option value="$PROJECT_DIR$/utils/indexandnode.py" />
         <option value="$PROJECT_DIR$/dominance/dominance1.py" />
         <option value="$PROJECT_DIR$/nsga2/estimate.py" />
         <option value="F:/getting_started(1).py" />
+        <option value="$PROJECT_DIR$/utils/WaterQualitySim.py" />
+        <option value="$PROJECT_DIR$/finalMain.py" />
+        <option value="$PROJECT_DIR$/utils/final.py" />
+        <option value="$PROJECT_DIR$/utils/IndexToNode.py" />
       </list>
     </option>
   </component>
@@ -558,12 +516,7 @@
             <path>
               <item name="SensorPlacementInDistributionNetworks" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="function" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="SensorPlacementInDistributionNetworks" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="nsga2" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="utils" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -617,7 +570,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.finalMain">
+  <component name="RunManager" selected="Python.final (1)">
     <configuration name="WaterQualitySim" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SensorPlacementInDistributionNetworks" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -773,9 +726,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.final (1)" />
         <item itemvalue="Python.finalMain" />
         <item itemvalue="Python.getting_started(1)" />
-        <item itemvalue="Python.final (1)" />
         <item itemvalue="Python.final" />
         <item itemvalue="Python.WaterQualitySim" />
       </list>
@@ -1051,6 +1004,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49343064" visible="true" weight="0.231444" />
       <window_info id="Structure" order="1" sideWeight="0.5065789" side_tool="true" weight="0.23819163" />
@@ -1065,10 +1019,10 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5040486" side_tool="true" weight="0.38540146" />
       <window_info anchor="bottom" id="TODO" order="9" weight="0.3270073" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4979757" weight="0.5065693" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4979757" weight="0.25109488" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.42627737" />
-      <window_info anchor="bottom" id="Python Console" order="13" sideWeight="0.4959514" weight="0.4218978" />
+      <window_info anchor="bottom" id="Python Console" order="13" sideWeight="0.4959514" visible="true" weight="0.3810219" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1147,11 +1101,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/timematrix/example5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-908" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/timematrix/fileread.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1302,16 +1251,6 @@
         <state relative-caret-position="-1368" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/indexandnode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="34" column="38" lean-forward="true" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/csMain.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -1427,31 +1366,17 @@
     <entry file="file://$PROJECT_DIR$/function/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/WaterQualitySimData.py">
+    <entry file="file://$PROJECT_DIR$/function/funModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        <state relative-caret-position="192">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/WaterQualitySim.py">
+    <entry file="file://$PROJECT_DIR$/newMain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="e#17#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/final.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-            <marker date="1561340126781" expanded="true" signature="673:1371" ph="..." />
-          </folding>
+        <state relative-caret-position="264">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
@@ -1462,26 +1387,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/newMain.py">
+    <entry file="file://$PROJECT_DIR$/utils/indexandnode.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216" />
+        <state relative-caret-position="264">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/WaterQualitySimData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/finalMain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="88" column="25" lean-forward="true" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
+        <state relative-caret-position="204">
+          <caret line="81" column="19" lean-forward="true" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
           <folding>
             <element signature="e#40#76#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/function/funModel.py">
+    <entry file="file://$PROJECT_DIR$/utils/WaterQualitySim.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="346">
+          <caret line="179" column="14" lean-forward="true" selection-start-line="179" selection-start-column="14" selection-end-line="179" selection-end-column="14" />
           <folding>
-            <element signature="e#117#135#0" expanded="true" />
+            <element signature="e#17#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/final.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+            <marker date="1561381404084" expanded="true" signature="819:1517" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/IndexToNode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <marker date="1561381560092" expanded="true" signature="194:199" ph="..." />
           </folding>
         </state>
       </provider>

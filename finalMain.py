@@ -68,13 +68,13 @@ class SensorPlacement():
             pop = dominanceMain(temp_pop, func_obj)
             print("第 %d 次迭代" % i)
 
-        estimate(pop, func_obj)
+        # estimate(pop, func_obj)
         pop_node = np.array(list(set([tuple(sorted(t)) for t in pop])))      # 个体按数值大小排序, 去重
         return pop_node
 
     def draw_node(self, pop_result):
-        for i in pop_result:
-            print(i)
+        #for i in pop_result:
+            #print(i)
         list1 = []
         func_obj = MinMax2(pop_result, self.read_json())
         # estimate(pop_result, func_obj)
@@ -83,6 +83,7 @@ class SensorPlacement():
             list1.append(m)
         # func_score = np.vstack((func_obj.objFun_1(), func_obj.objFun_2()))
         func_score = np.vstack((func_obj.objFun_1(), list1))
+        print(func_score)
         np.set_printoptions(suppress=True)
         x = func_score[0]
         y = func_score[1]

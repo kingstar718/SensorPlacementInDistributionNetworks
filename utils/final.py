@@ -1,6 +1,7 @@
 from utils.WaterQualitySim import WaterQualitySim
 from utils.WaterQualitySimData import WaterQualitySimData
 from finalMain import SensorPlacement
+from utils.IndexToNode import index_to_node
 
 # 无文件形式
 def dirt_test():
@@ -11,6 +12,9 @@ def dirt_test():
     sp = SensorPlacement(node_dirt=new_dirt, individuals_num=10, iterations_num=100)    # 算法迭代
     node_result = sp.iteration()        # 结果输出
     sp.draw_node(node_result)       # 帕累托解集显示
+    result_list = index_to_node(node_result, wqs.nodeList)
+    for i in result_list:
+        print(i)
 
 # 文件存储形式
 def json_test():
