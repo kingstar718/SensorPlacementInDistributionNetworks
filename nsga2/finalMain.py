@@ -93,7 +93,6 @@ class SensorPlacement():
         plt.show()
 
 
-if __name__ == '__main__':
 
     # 200个个体, 30个变量， 变量数值范围0到2**14
     # 交叉概率0.6， 编译概率0.1
