@@ -1,10 +1,10 @@
-from utils.WaterQualitySim1 import WaterQualitySim
-from utils.WaterQualitySimData1 import WaterQualitySimData
+from utils.WaterQualitySim import WaterQualitySim
+from utils.WaterQualitySimData import WaterQualitySimData
 from finalMain import SensorPlacement
 
 # 无文件形式
 def dirt_test():
-    ky8_inp = "F:/AWorkSpace/Python-Learning-Data/ky8.inp"
+    ky8_inp = "F:/AWorkSpace/Python-Learning-Data/Net3.inp"
     wqs = WaterQualitySim(ky8_inp)      # 加载管网
     node_dirt = wqs.parallel_compute_time_dirt(wqs.nodeList, is_json=False)    #水质模拟
     new_dirt = WaterQualitySimData(node_dirt=node_dirt).change_number(is_out=False)     # 数据处理
@@ -28,9 +28,9 @@ def json_test():
     sp.draw_node(node_result)  # 帕累托解集显示
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     inp1 = "F:/AWorkSpace/Python-Learning-Data/Net3.inp"
     inp2 = "F:/AWorkSpace/Python-Learning-Data/ky8.inp"
     inp3 = "F:/AWorkSpace/Python-Learning-Data/cs11021.inp"
 
-    json_test()
+    dirt_test()

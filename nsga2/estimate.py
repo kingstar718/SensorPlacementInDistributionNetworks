@@ -5,7 +5,6 @@ import random
 from dominance1 import dominance
 from rank import rank
 from dominanceMain import dominanceMain
-from fun.funUser import *
 from population_init import population
 
 
@@ -41,11 +40,5 @@ if __name__ == "__main__":
     print(dominanceMain(population, functionObject))
     print(estimate(population,functionObject))
     '''
-
-    p = population(10, 4)
-    #print(p)
-    f = MinMax(p)
-    #print(dominanceMain(p,f))
-    estimate(p,f)
 
 

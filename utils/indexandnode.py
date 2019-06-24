@@ -30,6 +30,7 @@ def split_index(rptfilepath, qualindex, regularmatch):
     f.close()
     return waterqualitylist
 
+
 if __name__ == "__main__":
     file1 = "F:/AWorkSpace/test/Net2node11.rpt"
     file2 = "F:/AWorkSpace/test/ky2node55.rpt"

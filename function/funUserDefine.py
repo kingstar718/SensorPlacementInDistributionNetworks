@@ -2,7 +2,8 @@
 # encoding:UTF-8
 from funModel import *
 from itertools import chain
-import pandas as pd
+
+
 # 以下为具体实现函数
 # 需要用户自定义函数，继承与上面的模板抽象函数
 class MinMax(objectFun_2):
@@ -167,8 +168,6 @@ class MinMax3(objectFun_2):
 
 # 测试函数  如下
 if __name__ == "__main__":
-    from timematrix.generatetimematrix import generate_timematrix
-    import csv
     from population_init import population
     import numpy as np
     import pandas as pd

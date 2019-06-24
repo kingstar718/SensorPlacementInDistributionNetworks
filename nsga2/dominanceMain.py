@@ -52,39 +52,7 @@ def dominanceMain(population, functionObject):
         N = ceng_population.shape[0]
         n = len(np.array(list(set([tuple(t) for t in ceng_population]))))
         print("第 ", i, "层的重复率:", n/N, "--该层个体数量:", N, "--不重复个体数量:", n)
-    '''
-    l_temp = []
-    if len(layerDict) + 1 >= 10:
-        for i in range(1, 10):
-            s += len(layerDict[i])
-            c_pop = np.array(population[layerDict[i]])  # 每层的个体
-            cP = c_pop.shape[0]     # 每层的个体数
-            cN = len(np.array(list(set([tuple(t) for t in c_pop]))))    # 每层不重复的个体数
-            temp = crowddist(funScore, layerDict[i])    # 每层的个体排序
 
-            for j in range(cN):
-                l_temp.append(temp[j])  # 将不重复个体加入数组
-    if len(l_temp)<=100:
-        for liu in range(10, len(layerDict) + 1):
-            l_temp.extend(layerDict[liu])
-    if len(l_temp)<=100:
-        m = nN - len(l_temp)
-        for mi in range(m):
-            l_temp.append(mi)
-    if len(l_temp) >=1000:
-        l_temp = l_temp[:1000]
-    '''
-
-
-
-    '''
-        if len(layerDict[i])<50:
-            continue
-        else:
-            l = layerDict[i]
-            p = population[l]
-            print("p",p)
-    '''
     print(len(indicate))
     # 返回新种群
     return population[indicate]

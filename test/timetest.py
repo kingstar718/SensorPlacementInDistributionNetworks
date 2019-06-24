@@ -1,14 +1,6 @@
-from population_init import population
-import time
 from function.funUserDefine import *
-from selection.selection import selection
-from crossover import crossover
-from mutation import mutation
-from dominance.dominanceMain import dominanceMain
-from dominance.estimate import estimate
 from population_init import population
 import numpy as np
-import random
 import pandas as pd
 
 def computePopTime(p_num,i_num,nodeNum):

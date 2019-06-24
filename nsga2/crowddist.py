@@ -3,7 +3,7 @@
 import numpy as np
 import random
 from population_init import population
-from fitness import fitness_pop
+
 from dominance1 import dominance
 from rank import rank
 """
@@ -68,8 +68,6 @@ def crowddist(funScore, indicate):
     #print(dist_indicate)
 
     return dist_indicate[::-1]
-
-
 
 
 if __name__ == "__main__":

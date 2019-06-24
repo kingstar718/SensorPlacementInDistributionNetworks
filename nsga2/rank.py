@@ -4,7 +4,6 @@ import numpy as np
 import random
 import copy
 from population_init import population
-from fitness import fitness_pop
 from dominance1 import dominance
 """
     输入：支配关系字典 r_dict

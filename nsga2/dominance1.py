@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # encoding:UTF-8
 import numpy as np
-from population_init import population
-from fitness import fitness_pop
 
 """
         支配关系字典 r_dict
@@ -68,4 +66,3 @@ if __name__=="__main__":
         支配关系字典 r_dict
         建立 {个体号码：[支配其的个数， 被其支配的个体列表]}
 """
-    

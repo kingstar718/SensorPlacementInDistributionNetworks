@@ -1,14 +1,14 @@
 # !/usr/bin/env python
 # encoding:UTF-8
 from function.funUserDefine import *
-from selection.selection import selection
+from selection import selection
 from crossover import crossover
 from mutation import mutation
-from dominance.dominanceMain import dominanceMain
-from dominance.estimate import estimate
+from dominanceMain import dominanceMain
+from estimate import estimate
 from population_init import population
 import matplotlib.pyplot as plt
-from json import load, loads, dump, dumps
+from json import load, loads
 
 
 class SensorPlacement():
