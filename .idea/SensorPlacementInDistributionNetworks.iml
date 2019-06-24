@@ -27,7 +27,7 @@
       <sourceFolder url="file://$MODULE_DIR$/data" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/timematrix" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/timematrix/test" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/utils" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/waterqualitysim" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/nsga2" isTestSource="false" />
     </content>
     <content url="file://D:/PythonProject">

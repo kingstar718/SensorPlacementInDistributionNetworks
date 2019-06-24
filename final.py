@@ -1,7 +1,8 @@
-from utils.WaterQualitySim import WaterQualitySim
-from utils.WaterQualitySimData import WaterQualitySimData
+from waterqualitysim.WaterQualitySim import WaterQualitySim
+from waterqualitysim.WaterQualitySimData import WaterQualitySimData
 from finalMain import SensorPlacement
-from utils.IndexToNode import index_to_node
+from waterqualitysim.IndexToNode import index_to_node
+
 
 # 无文件形式
 def dirt_test():
@@ -16,17 +17,18 @@ def dirt_test():
     for i in result_list:
         print(i)
 
+
 # 文件存储形式
 def json_test():
     ky8_inp = "F:/AWorkSpace/Python-Learning-Data/Net3.inp"
-    quality_path = "D:/Git/SensorPlacementInDistributionNetworks/utils/"
+    quality_path = "D:/Git/SensorPlacementInDistributionNetworks/waterqualitysim/"
     wqs = WaterQualitySim(ky8_inp)  # 加载管网
     wqs.parallel_compute_time_dirt(wqs.nodeList, rpt_file=quality_path)  # 水质模拟
 
-    json_path = "D:/Git/SensorPlacementInDistributionNetworks/utils/waterQuality.json"
+    json_path = "D:/Git/SensorPlacementInDistributionNetworks/waterqualitysim/waterQuality.json"
     new_dirt = WaterQualitySimData(json_path=json_path).change_number(is_out=True)
 
-    final_json = "D:/Git/SensorPlacementInDistributionNetworks/utils/final_json.json"
+    final_json = "D:/Git/SensorPlacementInDistributionNetworks/waterqualitysim/final_json.json"
     sp = SensorPlacement(json_path=final_json, individuals_num=10, iterations_num=500)      # 算法迭代
     node_result = sp.iteration()  # 结果输出
     sp.draw_node(node_result)  # 帕累托解集显示

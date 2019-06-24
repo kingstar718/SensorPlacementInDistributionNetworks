@@ -32,7 +32,7 @@ if __name__ == "__main__":
     xN=5
     yN=3
     alfa=0.8
-    p=population(5,6)
+    p=population(5,6,13)
 
     print(p)
     crossover(p,alfa)

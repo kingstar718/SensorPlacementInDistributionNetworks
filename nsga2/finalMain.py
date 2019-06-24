@@ -84,6 +84,7 @@ class SensorPlacement():
         # func_score = np.vstack((func_obj.objFun_1(), func_obj.objFun_2()))
         func_score = np.vstack((func_obj.objFun_1(), list1))
         print(func_score)
+        # funScore = np.transpose(func_score)
         np.set_printoptions(suppress=True)
         x = func_score[0]
         y = func_score[1]
