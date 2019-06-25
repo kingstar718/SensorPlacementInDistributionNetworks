@@ -1,22 +1,18 @@
 #!/usr/bin/env python
-#encoding:UTF-8
-import numpy as np
-import random
+# encoding:UTF-8
+from numpy import vstack, transpose, set_printoptions
 from dominance1 import dominance
 from rank import rank
-from dominanceMain import dominanceMain
-from population_init import population
 
 
 def estimate(population, functionObject):
     # 为函数对象赋值新的种群个体
     functionObject.population = population
-    # print("functionObject.population",population)
 
     # 计算新种群目标函数数值，并建立矩阵 funScore
-    funScore = np.vstack((functionObject.objFun_1(), functionObject.objFun_2()))
-    np.set_printoptions(suppress=True)
-    funScore = np.transpose(funScore)      # 二维数组是转置效果
+    funScore = vstack((functionObject.objFun_1(), functionObject.objFun_2()))
+    set_printoptions(suppress=True)
+    funScore = transpose(funScore)      # 二维数组是转置效果
     # print("funScore",funScore)
 
     # 输入函数数值矩阵，求得个体 分层和拥挤距离 字典
@@ -32,6 +28,9 @@ def estimate(population, functionObject):
 
 if __name__ == "__main__":
     '''
+    import random
+    from dominanceMain import dominanceMain
+    from population_init import population
     np.random.seed(0)
     random.seed(0)
     from function.funUserDefine import *

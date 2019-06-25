@@ -3,8 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="8ba68522-57b7-4d3d-ba5d-9a98c3cd4c03" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function/funUserDefine.py" beforeDir="false" afterPath="$PROJECT_DIR$/function/funUserDefine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nsga2/finalMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/finalMain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nsga2/crossover.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/crossover.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nsga2/crowddist.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/crowddist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nsga2/dominance1.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/dominance1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nsga2/dominanceMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/dominanceMain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nsga2/estimate.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/estimate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nsga2/mutation.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/mutation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nsga2/population_init.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/population_init.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nsga2/rank.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/rank.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nsga2/selection.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/selection.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -199,16 +206,16 @@
           <entry key="demo6" value="2" />
           <entry key="dummy" value="114" />
           <entry key="md" value="397" />
-          <entry key="py" value="56125" />
-          <entry key="txt" value="316" />
+          <entry key="py" value="56724" />
+          <entry key="txt" value="328" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSV" value="3" />
           <entry key="Markdown" value="397" />
-          <entry key="PLAIN_TEXT" value="430" />
-          <entry key="Python" value="56125" />
+          <entry key="PLAIN_TEXT" value="442" />
+          <entry key="Python" value="56724" />
           <entry key="SQL" value="4" />
         </counts>
       </usages-collector>
@@ -222,7 +229,7 @@
           <entry key="json" value="4" />
           <entry key="md" value="9" />
           <entry key="png" value="2" />
-          <entry key="py" value="907" />
+          <entry key="py" value="918" />
           <entry key="pyi" value="1" />
           <entry key="rpt" value="14" />
           <entry key="s" value="1" />
@@ -238,7 +245,7 @@
           <entry key="JSON" value="4" />
           <entry key="Markdown" value="9" />
           <entry key="PLAIN_TEXT" value="74" />
-          <entry key="Python" value="910" />
+          <entry key="Python" value="921" />
           <entry key="PythonStub" value="1" />
           <entry key="XML" value="1" />
         </counts>
@@ -253,8 +260,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/final.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="316">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <marker date="1561382510462" expanded="true" signature="851:1579" ph="..." />
               </folding>
@@ -263,33 +270,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nsga2/selection.py">
+        <entry file="file://$PROJECT_DIR$/nsga2/dominanceMain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="192">
+              <caret line="59" column="22" lean-forward="true" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
               <folding>
-                <element signature="e#38#51#0" expanded="true" />
+                <element signature="e#38#98#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/function/funModel.py">
+        <entry file="file://$PROJECT_DIR$/nsga2/estimate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1320">
-              <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            <state relative-caret-position="216">
+              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+              <folding>
+                <element signature="e#39#92#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/function/funUserDefine.py">
+        <entry file="file://$PROJECT_DIR$/nsga2/crossover.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="73" column="23" lean-forward="true" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
+            <state relative-caret-position="-48">
+              <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
               <folding>
-                <element signature="e#39#61#0" expanded="true" />
+                <element signature="e#40#65#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -298,63 +308,64 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nsga2/finalMain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="96" column="11" lean-forward="true" selection-start-line="96" selection-start-column="11" selection-end-line="96" selection-end-column="11" />
+            <state relative-caret-position="-384">
+              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nsga2/mutation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-308">
+              <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
               <folding>
-                <element signature="e#40#76#0" expanded="true" />
+                <element signature="e#39#73#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/waterqualitysim/IndexToNode.py">
+        <entry file="file://$PROJECT_DIR$/nsga2/population_init.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            <state relative-caret-position="336">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
-                <marker date="1561381560092" expanded="true" signature="194:199" ph="..." />
+                <element signature="e#39#62#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/waterqualitysim/WaterQualitySim.py">
+        <entry file="file://$PROJECT_DIR$/nsga2/rank.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="179" column="14" lean-forward="true" selection-start-line="179" selection-start-column="14" selection-end-line="179" selection-end-column="14" />
+            <state relative-caret-position="826">
+              <caret line="38" column="3" lean-forward="true" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nsga2/selection.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="34" column="43" lean-forward="true" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
               <folding>
-                <element signature="e#17#53#0" expanded="true" />
+                <element signature="e#38#72#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/waterqualitysim/WaterQualitySimData.py">
+        <entry file="file://$PROJECT_DIR$/function/funUserDefine.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1848">
-              <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+            <state relative-caret-position="606">
+              <caret line="105" column="33" lean-forward="true" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nsga2/crossover.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="744">
-              <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-              <folding>
-                <element signature="e#39#57#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nsga2/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -401,13 +412,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../Python-Learning/tkinter/ch_7_Listbox.py" />
-        <option value="$PROJECT_DIR$/../Python-Learning/qtdemo/def1.py" />
-        <option value="$PROJECT_DIR$/../Python-Learning/tkinter/SensorPlace.py" />
-        <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/demo5.py" />
-        <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/demo7.py" />
-        <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/waterQualitySimulation.py" />
-        <option value="$PROJECT_DIR$/../Python-Learning/spiderdemo/ch-3-urllib.py" />
         <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/demo6.py" />
         <option value="$PROJECT_DIR$/../Python-Learning/SensorPlace/findData.py" />
         <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/networkXDemo.py" />
@@ -441,17 +445,24 @@
         <option value="$PROJECT_DIR$/csMain.py" />
         <option value="$PROJECT_DIR$/utils/indexandnode.py" />
         <option value="$PROJECT_DIR$/dominance/dominance1.py" />
-        <option value="$PROJECT_DIR$/nsga2/estimate.py" />
         <option value="F:/getting_started(1).py" />
         <option value="$PROJECT_DIR$/utils/WaterQualitySim.py" />
         <option value="$PROJECT_DIR$/utils/final.py" />
         <option value="$PROJECT_DIR$/utils/IndexToNode.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/finalMain.py" />
-        <option value="$PROJECT_DIR$/nsga2/crossover.py" />
         <option value="$PROJECT_DIR$/final.py" />
         <option value="$PROJECT_DIR$/nsga2/finalMain.py" />
         <option value="$PROJECT_DIR$/function/funUserDefine.py" />
+        <option value="$PROJECT_DIR$/nsga2/crowddist.py" />
+        <option value="$PROJECT_DIR$/nsga2/dominance1.py" />
+        <option value="$PROJECT_DIR$/nsga2/mutation.py" />
+        <option value="$PROJECT_DIR$/nsga2/population_init.py" />
+        <option value="$PROJECT_DIR$/nsga2/rank.py" />
+        <option value="$PROJECT_DIR$/nsga2/crossover.py" />
+        <option value="$PROJECT_DIR$/nsga2/selection.py" />
+        <option value="$PROJECT_DIR$/nsga2/estimate.py" />
+        <option value="$PROJECT_DIR$/nsga2/dominanceMain.py" />
       </list>
     </option>
   </component>
@@ -593,7 +604,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.funUserDefine">
+  <component name="RunManager" selected="Python.final">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="SensorPlacementInDistributionNetworks" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -752,8 +763,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.funUserDefine" />
         <item itemvalue="Python.final" />
+        <item itemvalue="Python.funUserDefine" />
         <item itemvalue="Python.final (1)" />
         <item itemvalue="Python.finalMain" />
         <item itemvalue="Python.getting_started(1)" />
@@ -1030,7 +1041,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561382161274</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="change">
+      <created>1561428743770</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1561428743771</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1062,7 +1080,7 @@
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4979757" weight="0.25109488" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.35036495" />
-      <window_info anchor="bottom" id="Python Console" order="13" sideWeight="0.4959514" visible="true" weight="0.3970803" />
+      <window_info anchor="bottom" id="Python Console" order="13" sideWeight="0.4959514" weight="0.49635038" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1135,11 +1153,11 @@
     <MESSAGE value="final main change" />
     <MESSAGE value="sorted" />
     <MESSAGE value="sum of quality thing method change" />
-    <MESSAGE value="change" />
     <MESSAGE value="66383node" />
     <MESSAGE value="test" />
     <MESSAGE value="index to node name" />
-    <option name="LAST_COMMIT_MESSAGE" value="index to node name" />
+    <MESSAGE value="change" />
+    <option name="LAST_COMMIT_MESSAGE" value="change" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/timematrix/generatetimelist.py">
@@ -1194,58 +1212,6 @@
         <state relative-caret-position="-72" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nsga2/dominance1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1608">
-          <caret line="67" column="3" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nsga2/dominanceMain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="68" column="35" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
-          <folding>
-            <element signature="e#38#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nsga2/estimate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
-          <folding>
-            <element signature="e#38#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nsga2/mutation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-548">
-          <folding>
-            <element signature="e#39#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nsga2/population_init.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nsga2/rank.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/function/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1269,38 +1235,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/waterqualitysim/indexandnode.py" />
     <entry file="file://$PROJECT_DIR$/csMain.py" />
-    <entry file="file://$PROJECT_DIR$/nsga2/crowddist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1584">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="e#38#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nsga2/crossover.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-          <folding>
-            <element signature="e#39#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nsga2/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/waterqualitysim/IndexToNode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <marker date="1561381560092" expanded="true" signature="194:199" ph="..." />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/waterqualitysim/WaterQualitySim.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1326,42 +1262,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nsga2/selection.py">
+    <entry file="file://$PROJECT_DIR$/waterqualitysim/IndexToNode.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="264">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
           <folding>
-            <element signature="e#38#51#0" expanded="true" />
+            <marker date="1561381560092" expanded="true" signature="194:199" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/final.py">
+    <entry file="file://$PROJECT_DIR$/nsga2/crowddist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="1032">
+          <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
           <folding>
-            <marker date="1561382510462" expanded="true" signature="851:1579" ph="..." />
+            <element signature="e#38#101#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nsga2/finalMain.py">
+    <entry file="file://$PROJECT_DIR$/nsga2/dominance1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="96" column="11" lean-forward="true" selection-start-line="96" selection-start-column="11" selection-end-line="96" selection-end-column="11" />
+        <state relative-caret-position="96">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nsga2/population_init.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
-            <element signature="e#40#76#0" expanded="true" />
+            <element signature="e#39#62#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/function/funUserDefine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="73" column="23" lean-forward="true" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
+        <state relative-caret-position="606">
+          <caret line="105" column="33" lean-forward="true" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nsga2/finalMain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-384">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/final.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
           <folding>
-            <element signature="e#39#61#0" expanded="true" />
+            <marker date="1561382510462" expanded="true" signature="851:1579" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nsga2/rank.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="826">
+          <caret line="38" column="3" lean-forward="true" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nsga2/selection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="34" column="43" lean-forward="true" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+          <folding>
+            <element signature="e#38#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nsga2/mutation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-308">
+          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <element signature="e#39#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nsga2/estimate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <folding>
+            <element signature="e#39#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nsga2/dominanceMain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="59" column="22" lean-forward="true" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+          <folding>
+            <element signature="e#38#98#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nsga2/crossover.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-48">
+          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding>
+            <element signature="e#40#65#0" expanded="true" />
           </folding>
         </state>
       </provider>
