@@ -1,4 +1,4 @@
-
+# encoding:utf-8
 
 def index_to_node(index_list, node_list):
     """

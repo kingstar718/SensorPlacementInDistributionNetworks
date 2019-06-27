@@ -23,7 +23,7 @@ class WaterQualitySim:
             self.wn_model = self.init_model()
         else:
             self.wn_model = self.simple_model()
-        self.nodeList = self.wn_model.node_name_list  # 管网所有节点
+        self.nodeList = self.wn_model.junction_name_list  # 只在管网的连接节点上进行模拟,
 
     def init_model(self, time_duration=12 * 3600, report_time_step=600, report_start=0):
         """

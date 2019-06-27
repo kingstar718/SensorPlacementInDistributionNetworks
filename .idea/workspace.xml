@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ba68522-57b7-4d3d-ba5d-9a98c3cd4c03" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/simulation/FilterNode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SensorPlacementInDistributionNetworks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SensorPlacementInDistributionNetworks.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nsga2/crossover.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/crossover.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nsga2/crowddist.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/crowddist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nsga2/dominance1.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/dominance1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nsga2/dominanceMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/dominanceMain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nsga2/estimate.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/estimate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nsga2/mutation.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/mutation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nsga2/population_init.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/population_init.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nsga2/rank.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/rank.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nsga2/selection.py" beforeDir="false" afterPath="$PROJECT_DIR$/nsga2/selection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final.py" beforeDir="false" afterPath="$PROJECT_DIR$/final.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waterqualitysim/IndexToNode.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/IndexToNode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waterqualitysim/WaterQualitySim.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/WaterQualitySim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waterqualitysim/WaterQualitySimData.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/WaterQualitySimData.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +172,7 @@
     <session id="1202207560">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
+          <entry key="project.closed" value="22" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
@@ -184,7 +181,7 @@
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.22" value="3" />
-          <entry key="project.open.time.23" value="4" />
+          <entry key="project.open.time.23" value="5" />
           <entry key="project.open.time.24" value="4" />
           <entry key="project.open.time.25" value="5" />
           <entry key="project.open.time.26" value="3" />
@@ -194,9 +191,9 @@
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.7" value="3" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="38" />
+          <entry key="project.opened" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -206,7 +203,7 @@
           <entry key="demo6" value="2" />
           <entry key="dummy" value="114" />
           <entry key="md" value="397" />
-          <entry key="py" value="56724" />
+          <entry key="py" value="58806" />
           <entry key="txt" value="328" />
         </counts>
       </usages-collector>
@@ -215,7 +212,7 @@
           <entry key="CSV" value="3" />
           <entry key="Markdown" value="397" />
           <entry key="PLAIN_TEXT" value="442" />
-          <entry key="Python" value="56724" />
+          <entry key="Python" value="58806" />
           <entry key="SQL" value="4" />
         </counts>
       </usages-collector>
@@ -224,12 +221,13 @@
           <entry key="1" value="1" />
           <entry key="bak" value="3" />
           <entry key="cfg" value="1" />
-          <entry key="csv" value="40" />
+          <entry key="csv" value="42" />
           <entry key="inp" value="55" />
+          <entry key="ipynb" value="1" />
           <entry key="json" value="4" />
           <entry key="md" value="9" />
           <entry key="png" value="2" />
-          <entry key="py" value="918" />
+          <entry key="py" value="958" />
           <entry key="pyi" value="1" />
           <entry key="rpt" value="14" />
           <entry key="s" value="1" />
@@ -239,13 +237,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSV" value="40" />
+          <entry key="CSV" value="42" />
+          <entry key="IPNB" value="1" />
           <entry key="Image" value="2" />
           <entry key="Ini" value="1" />
           <entry key="JSON" value="4" />
           <entry key="Markdown" value="9" />
           <entry key="PLAIN_TEXT" value="74" />
-          <entry key="Python" value="921" />
+          <entry key="Python" value="961" />
           <entry key="PythonStub" value="1" />
           <entry key="XML" value="1" />
         </counts>
@@ -257,113 +256,110 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/final.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-              <folding>
-                <marker date="1561382510462" expanded="true" signature="851:1579" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nsga2/dominanceMain.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="59" column="22" lean-forward="true" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
-              <folding>
-                <element signature="e#38#98#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nsga2/estimate.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-              <folding>
-                <element signature="e#39#92#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nsga2/crossover.py">
+        <entry file="file://$PROJECT_DIR$/simulation/FilterNode.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-48">
-              <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+            <state relative-caret-position="-504">
+              <caret column="16" selection-start-column="16" selection-end-column="16" />
               <folding>
-                <element signature="e#40#65#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
+                <marker date="1561634060750" expanded="true" signature="250:2994" ph="..." />
+                <marker date="1561634060750" expanded="true" signature="3127:3256" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nsga2/finalMain.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-384">
-              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nsga2/mutation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-308">
-              <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-              <folding>
-                <element signature="e#39#73#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nsga2/population_init.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="e#39#62#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nsga2/rank.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="826">
-              <caret line="38" column="3" lean-forward="true" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nsga2/selection.py">
+        <entry file="file://$PROJECT_DIR$/simulation/WaterQualitySimData.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="96">
-              <caret line="34" column="43" lean-forward="true" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+              <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Python-Learning/SensorPlace/fileRead.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
               <folding>
-                <element signature="e#38#72#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/function/funUserDefine.py">
+        <entry file="file://$PROJECT_DIR$/../Python-Learning/SensorPlace/dataProcessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="606">
-              <caret line="105" column="33" lean-forward="true" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
+            <state relative-caret-position="-2088" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Python-Learning/SensorPlace/findData.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-92">
+              <caret line="74" column="30" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simulation/IndexToNode.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+              <folding>
+                <marker date="1561634060786" expanded="true" signature="210:215" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simulation/WaterQualitySim.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-288">
+              <caret selection-end-column="16" />
+              <folding>
+                <element signature="e#17#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/pandasDemo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="96" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/pandasDemo2.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/matrixProcessingDemo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -375,6 +371,7 @@
       <list>
         <option value="HTML File" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -412,11 +409,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/demo6.py" />
-        <option value="$PROJECT_DIR$/../Python-Learning/SensorPlace/findData.py" />
-        <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/networkXDemo.py" />
-        <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/processDemo.py" />
-        <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/multiprocessingDemo.py" />
         <option value="$PROJECT_DIR$/../Python-Learning/SensorPlace/waterQualitySimulation.py" />
         <option value="$PROJECT_DIR$/../Python-Learning/spiderdemo/ch-3-mydemo.py" />
         <option value="$PROJECT_DIR$/../Python-Learning/spiderdemo/ch-5-request.py" />
@@ -451,7 +443,6 @@
         <option value="$PROJECT_DIR$/utils/IndexToNode.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/finalMain.py" />
-        <option value="$PROJECT_DIR$/final.py" />
         <option value="$PROJECT_DIR$/nsga2/finalMain.py" />
         <option value="$PROJECT_DIR$/function/funUserDefine.py" />
         <option value="$PROJECT_DIR$/nsga2/crowddist.py" />
@@ -463,6 +454,12 @@
         <option value="$PROJECT_DIR$/nsga2/selection.py" />
         <option value="$PROJECT_DIR$/nsga2/estimate.py" />
         <option value="$PROJECT_DIR$/nsga2/dominanceMain.py" />
+        <option value="$PROJECT_DIR$/waterqualitysim/WaterQualitySim.py" />
+        <option value="$PROJECT_DIR$/final.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/pandasDemo.py" />
+        <option value="$PROJECT_DIR$/../Python-Learning/wntrdemo/pandasDemo2.ipynb" />
+        <option value="$PROJECT_DIR$/simulation/IndexToNode.py" />
+        <option value="$PROJECT_DIR$/simulation/FilterNode.py" />
       </list>
     </option>
   </component>
@@ -506,6 +503,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="SensorPlacementInDistributionNetworks" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="SensorPlacementInDistributionNetworks" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="nsga2" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -522,35 +535,18 @@
               <item name="SensorPlacementInDistributionNetworks" type="b2602c69:ProjectViewProjectNode" />
               <item name="SensorPlacementInDistributionNetworks" type="47feb1d3:ProjectViewModuleNode" />
               <item name="SensorPlacementInDistributionNetworks" type="462c0819:PsiDirectoryNode" />
-              <item name="function" type="462c0819:PsiDirectoryNode" />
+              <item name="simulation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SensorPlacementInDistributionNetworks" type="b2602c69:ProjectViewProjectNode" />
               <item name="SensorPlacementInDistributionNetworks" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="SensorPlacementInDistributionNetworks" type="462c0819:PsiDirectoryNode" />
-              <item name="nsga2" type="462c0819:PsiDirectoryNode" />
+              <item name="Python-Learning" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SensorPlacementInDistributionNetworks" type="b2602c69:ProjectViewProjectNode" />
               <item name="SensorPlacementInDistributionNetworks" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="SensorPlacementInDistributionNetworks" type="462c0819:PsiDirectoryNode" />
-              <item name="waterqualitysim" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="SensorPlacementInDistributionNetworks" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="SensorPlacementInDistributionNetworks" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="nsga2" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Python-Learning" type="462c0819:PsiDirectoryNode" />
+              <item name="wntrdemo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -604,7 +600,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.final">
+  <component name="RunManager" selected="Python.FilterNode">
+    <configuration name="FilterNode" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SensorPlacementInDistributionNetworks" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/simulation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/simulation/FilterNode.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="SensorPlacementInDistributionNetworks" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -668,32 +683,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="finalMain" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="funUserDefine" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SensorPlacementInDistributionNetworks" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\Git\SensorPlacementInDistributionNetworks\nsga2\finalMain.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="funUserDefine" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="SensorPlacementInDistributionNetworks" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/function" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -709,20 +705,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="getting_started(1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pandasDemo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SensorPlacementInDistributionNetworks" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="F:/" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Python-Learning/wntrdemo" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="F:/getting_started(1).py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Python-Learning/wntrdemo/pandasDemo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -755,19 +748,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.www" />
-      <item itemvalue="Python.finalMain" />
       <item itemvalue="Python.final" />
       <item itemvalue="Python.final (1)" />
-      <item itemvalue="Python.getting_started(1)" />
       <item itemvalue="Python.funUserDefine" />
+      <item itemvalue="Python.FilterNode" />
+      <item itemvalue="Python.pandasDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.FilterNode" />
+        <item itemvalue="Python.pandasDemo" />
         <item itemvalue="Python.final" />
         <item itemvalue="Python.funUserDefine" />
         <item itemvalue="Python.final (1)" />
-        <item itemvalue="Python.finalMain" />
-        <item itemvalue="Python.getting_started(1)" />
       </list>
     </recent_temporary>
   </component>
@@ -1048,7 +1041,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561428743771</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="change">
+      <created>1561431742219</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1561431742219</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1064,7 +1064,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49343064" visible="true" weight="0.23549257" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49343064" visible="true" weight="0.21187584" />
       <window_info id="Structure" order="1" sideWeight="0.5065789" side_tool="true" weight="0.23819163" />
       <window_info id="Favorites" order="2" sideWeight="0.5065693" side_tool="true" weight="0.22334683" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1080,7 +1080,7 @@
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4979757" weight="0.25109488" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.35036495" />
-      <window_info anchor="bottom" id="Python Console" order="13" sideWeight="0.4959514" weight="0.49635038" />
+      <window_info anchor="bottom" id="Python Console" order="13" sideWeight="0.4959514" weight="0.36934307" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1160,69 +1160,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="change" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/timematrix/generatetimelist.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timematrix/generatetimematrix.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timematrix/max.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timematrix/splitfile.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timematrix/thread.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/3node50gen.csv" />
-    <entry file="file://$PROJECT_DIR$/data/809node.py" />
-    <entry file="file://$PROJECT_DIR$/data/drawNode.py" />
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mulObject.py" />
-    <entry file="file://$PROJECT_DIR$/fitness.py" />
-    <entry file="file://$PROJECT_DIR$/data/demo1111.py" />
-    <entry file="file://$PROJECT_DIR$/data/demo2.py" />
-    <entry file="file://$PROJECT_DIR$/data/demo3.py" />
-    <entry file="file://$PROJECT_DIR$/result/demo2.py" />
-    <entry file="file://$PROJECT_DIR$/result/demo1.py" />
-    <entry file="file://$PROJECT_DIR$/result/result.csv" />
-    <entry file="file://$PROJECT_DIR$/result/result2.csv" />
-    <entry file="file://$PROJECT_DIR$/result/result3.csv" />
-    <entry file="file://$PROJECT_DIR$/result/result4.csv" />
-    <entry file="file://$PROJECT_DIR$/test/timetest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1800" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selection/selection.py.bak" />
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1368" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dominance/fun/funUser.py" />
     <entry file="file://$PROJECT_DIR$/dominance/fun/funModel.py" />
     <entry file="file://$PROJECT_DIR$/function/newFunction.py" />
     <entry file="file://$PROJECT_DIR$/function/matchArray.py" />
-    <entry file="file://$PROJECT_DIR$/timematrix/commandline.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/function/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/newMain.py" />
-    <entry file="file://F:/getting_started(1).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://F:/getting_started(1).py" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1238,23 +1183,6 @@
     <entry file="file://$PROJECT_DIR$/nsga2/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/waterqualitysim/WaterQualitySim.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="179" column="14" lean-forward="true" selection-start-line="179" selection-start-column="14" selection-end-line="179" selection-end-column="14" />
-          <folding>
-            <element signature="e#17#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/waterqualitysim/WaterQualitySimData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1848">
-          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/function/funModel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1320">
@@ -1262,23 +1190,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/waterqualitysim/IndexToNode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding>
-            <marker date="1561381560092" expanded="true" signature="194:199" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nsga2/crowddist.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1032">
           <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
-          <folding>
-            <element signature="e#38#101#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1293,9 +1208,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#39#62#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1313,16 +1225,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/final.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <marker date="1561382510462" expanded="true" signature="851:1579" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nsga2/rank.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="826">
@@ -1334,9 +1236,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="34" column="43" lean-forward="true" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
-          <folding>
-            <element signature="e#38#72#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1344,9 +1243,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-308">
           <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="e#39#73#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1354,9 +1250,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-          <folding>
-            <element signature="e#39#92#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1364,9 +1257,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="59" column="22" lean-forward="true" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
-          <folding>
-            <element signature="e#38#98#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1374,8 +1264,170 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-48">
           <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/timetest.py" />
+    <entry file="file://$PROJECT_DIR$/timematrix/commandline.py" />
+    <entry file="file://$PROJECT_DIR$/timematrix/example5.py" />
+    <entry file="file://$PROJECT_DIR$/timematrix/fileread.py" />
+    <entry file="file://$PROJECT_DIR$/timematrix/generatetimelist.py" />
+    <entry file="file://$PROJECT_DIR$/timematrix/generatetimematrix.py" />
+    <entry file="file://$PROJECT_DIR$/timematrix/max.csv" />
+    <entry file="file://$PROJECT_DIR$/timematrix/splitfile.py" />
+    <entry file="file://$PROJECT_DIR$/timematrix/thread.py" />
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/SensorPlace/ch-1-waterQualitySimulation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/final.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="41" column="56" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="56" />
           <folding>
-            <element signature="e#40#65#0" expanded="true" />
+            <marker date="1561599452190" expanded="true" signature="902:1615" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/SensorPlace/drawNode.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/SensorPlace/docTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/demo7.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/UsualSoft/Anaconda3/Lib/site-packages/pandas/core/frame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="2730" column="8" selection-start-line="2730" selection-start-column="8" selection-end-line="2730" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/multiprocessingDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1316">
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/networkXDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="32" selection-start-line="32" selection-end-line="40" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/mapreduceDemo.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/pandasDemo2.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/pandasDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simulation/test.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="68" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simulation/WaterQualitySim.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-288">
+          <caret selection-end-column="16" />
+          <folding>
+            <element signature="e#17#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simulation/WaterQualitySimData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/SensorPlace/findData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92">
+          <caret line="74" column="30" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/SensorPlace/fileRead.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/SensorPlace/dataProcessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2088" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Learning/wntrdemo/matrixProcessingDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simulation/IndexToNode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding>
+            <marker date="1561634060786" expanded="true" signature="210:215" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simulation/FilterNode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-504">
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <marker date="1561634060750" expanded="true" signature="250:2994" ph="..." />
+            <marker date="1561634060750" expanded="true" signature="3127:3256" ph="..." />
           </folding>
         </state>
       </provider>
