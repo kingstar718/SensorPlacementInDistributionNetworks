@@ -3,23 +3,24 @@ import pandas as pd
 import wntr
 import os
 
+
 class FilterNode():
     def __init__(self, inp_file):
         self.inp_file = inp_file
         self.wnModel = wntr.network.WaterNetworkModel(self.inp_file)
 
-    def compute_water_data(self):
+    def compute_water_data(self, to_csv = False):
         wn = wntr.network.WaterNetworkModel(self.inp_file)
         sim = wntr.sim.EpanetSimulator(wn)
         wn.options.time.duration = 24 * 3600  # 设置水力时间为24小时
         result = sim.run_sim()  # 注意 所有的run_sim函数中的file_prefix参数需设置路径, 不然管网太大会生成三个大文件, 无法上传至github
 
         water_data = pd.DataFrame()     # 收集数据的pandas类,
-        water_data["node_name"] = wn.node_name_list
+        water_data["node_name"] = wn.junction_name_list     # 改为只要junction点
         demand = result.node['demand']
         pressure = result.node['pressure']
-        demand_list, pressure_list = [],[]
-        for i in wn.node_name_list:
+        demand_list, pressure_list = [], []
+        for i in wn.junction_name_list:     # 改为只要junction点
             diff_demand = self.diff_cal(demand[i])
             diff_pressure= self.diff_cal(pressure[i])
             demand_list.append(diff_demand)
@@ -28,7 +29,7 @@ class FilterNode():
         water_data["diff_pressure"] = pressure_list
 
         ave_diameter, diff_diameter, pipe_len_list, volume_list = [], [], [], []
-        for i in wn.node_name_list:
+        for i in wn.junction_name_list:     # 改为只要junction点
             pipe_list = wn.get_links_for_node(i)
             dia_list, len_list, volume = [], [], []     # 存节点的管径,管长
             for j in pipe_list:
@@ -55,6 +56,7 @@ class FilterNode():
             diff_diameter.append(dia_diff)
             pipe_len_list.append(pipe_len)
             volume_list.append(volume_node)
+            print("节点%s 完成" % i)
         water_data["ave_diameter"] = ave_diameter
         water_data["diff_diameter"] = diff_diameter
         water_data["pipe_len_list"] = pipe_len_list
@@ -64,12 +66,13 @@ class FilterNode():
         G = wn.get_graph()
         kv_degree = G.degree()
         degree_list = list(kv_degree.values())
-        water_data["degree_list"] = degree_list
+        water_data["degree_list"] = degree_list[0: len(wn.junction_name_list)]      # 改为只要junction点
         """
         .ix is deprecated. Please use
         .loc for label based indexing or
         .iloc for positional indexing"""
-        water_data.to_csv(path_or_buf="test.csv")
+        if to_csv is True:
+            water_data.to_csv(path_or_buf="test.csv")
 
         # 删掉生成的文件
         os.remove("temp.bin")
@@ -88,11 +91,33 @@ class FilterNode():
         list_len = len(sort_list)
         return abs(sort_list[0] - sort_list[list_len-1])
 
+    @staticmethod
+    def data_normalization(pandas_data,  to_csv = False):
+        """
+        pandas数据的归一化，即值/和
+        :param pandas_data:
+        :param to_csv
+        :return: new pandas_data
+        """
+        pandas_data = pandas_data[["diff_demand", "diff_pressure", "ave_diameter", "diff_diameter", "pipe_len_list",  "volume_list", "degree_list"]]
+        for i in pandas_data:
+            pandas_data[i] = pandas_data[i]/pandas_data[i].sum()
+        if to_csv is True:
+            pandas_data.to_csv(path_or_buf="normalization.csv")
+        return pandas_data
+
 
 if __name__ == "__main__":
     inp1 = "F:/AWorkSpace/Python-Learning-Data/Net3.inp"
     inp2 = "F:/AWorkSpace/Python-Learning-Data/ky8.inp"
-    result = FilterNode(inp2).compute_water_data()
+    inp3 = "F:/AWorkSpace/Python-Learning-Data/cs11021.inp"
+    # result = FilterNode(inp2).compute_water_data()
     path_or_buf = "D:\\Git\\SensorPlacementInDistributionNetworks\\simulation\\test.csv"
     # p = pd.read_csv(path_or_buf)
     # print(p)
+
+    fn = FilterNode(inp2)
+    data1 = fn.compute_water_data()
+    data2 = fn.data_normalization(data1)
+    #wn = wntr.network.WaterNetworkModel(inp3)
+    #print(len(wn.node_name_list), len(wn.junction_name_list))
