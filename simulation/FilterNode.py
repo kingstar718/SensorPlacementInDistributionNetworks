@@ -151,6 +151,69 @@ class FilterNode():
         print(evaluation_result)
         print(type(evaluation_result))'''
 
+    @staticmethod
+    def entropy_eevaluation(pandas_data = None, csv_path = None):
+        """
+        熵值法
+        默认数据已经经过无量纲化
+        :param pandas_data:
+        :param csv_path:
+        :return:
+        """
+        if csv_path is None:
+            p = pandas_data
+        else:
+            p = pd.read_csv(csv_path)
+        zhibiao = ["diff_demand", "diff_pressure", "ave_diameter", "diff_diameter", "degree_list"]
+        p = p[zhibiao]
+        weight_list = []
+        for i in zhibiao:
+            m = p[i]
+            list_data = list(m)
+            #print(list_data)
+            k = -1.0/np.log(len(list_data))
+            value_sum = 0
+            for i in list_data:
+                if i == 0:
+                    i = 0.0001
+                value = np.log(i)*i
+                value_sum += value
+            e = value_sum*k
+            d = 1-e
+            weight_list.append(d)
+        print(weight_list)
+        result_list = []
+        for i in range(len(weight_list)):
+            m = weight_list[i]/sum(weight_list)
+            result_list.append(m)
+        print(result_list)
+
+    @staticmethod
+    def get_rank(pandas_data):
+        """
+        根据值获取索引series1[series1.values == 1].index
+        根据索引获取值series1['a']
+        :param pandas_data:
+        :return:
+        """
+        print("========================================")
+        rank_list = list(pandas_data["degree_list"])
+        p = pandas_data["degree_list"]
+
+        p_name = pandas_data["node_name"]
+        print(p.sort_values(ascending=False))      # 按Series的值排序  False即从大到小排
+        print(list(p.sort_values(ascending=False).index))      # 将排序后的索引拿出来
+        """
+        index_list = []
+        for i in rank_list:
+            index = p[p.values==i].index
+            index_list.append(index)
+        print(index_list)
+        
+        node_list = []
+        for i in index_list:
+            node_list.append(p_name[i])
+        print(node_list)"""
 
 if __name__ == "__main__":
     inp1 = "F:/AWorkSpace/Python-Learning-Data/Net3.inp"
@@ -166,6 +229,8 @@ if __name__ == "__main__":
     fn = FilterNode(inp2)
     data1 = fn.compute_water_data()
     data2 = fn.data_normalization(pandas_data=data1)
-    fn.data_evaluation(pandas_data=data2)
+    #fn.data_evaluation(pandas_data=data2)
+    #fn.entropy_eevaluation(pandas_data=data2)
+    fn.get_rank(data1)
     # wn = wntr.network.WaterNetworkModel(inp3)
     # print(len(wn.node_name_list), len(wn.junction_name_list))
