@@ -9,7 +9,7 @@ import json
 
 # 无文件形式
 def dirt_test():
-    ky8_inp = "F:/AWorkSpace/Python-Learning-Data/Net3.inp"
+    ky8_inp = "F:/AWorkSpace/Python-Learning-Data/ky2.inp"
     wqs = WaterQualitySim(ky8_inp)      # 加载管网
     node_dirt = wqs.parallel_compute_time_dirt(wqs.nodeList, is_json=False)    # 水质模拟
 
@@ -109,6 +109,6 @@ if __name__ == "__main__":
     inp3 = "F:/AWorkSpace/Python-Learning-Data/cs11021.inp"
 
     # weight_test(inp1)
-    # dirt_test()
+    dirt_test()
     # ky8_json_test()
-    ky8_weight_json_test()
+    # ky8_weight_json_test()

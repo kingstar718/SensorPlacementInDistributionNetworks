@@ -2,6 +2,7 @@
 import pandas as pd
 import wntr
 import os
+import numpy as np
 
 
 class FilterNode():
@@ -92,32 +93,79 @@ class FilterNode():
         return abs(sort_list[0] - sort_list[list_len-1])
 
     @staticmethod
-    def data_normalization(pandas_data,  to_csv = False):
+    def data_normalization(pandas_data=None, to_csv=False, csv_path=None):
         """
         pandas数据的归一化，即值/和
-        :param pandas_data:
-        :param to_csv
+        :param pandas_data: dataframe数据
+        :param to_csv   是否保存为csv
+        :param csv_path csv文件路径
         :return: new pandas_data
         """
-        pandas_data = pandas_data[["diff_demand", "diff_pressure", "ave_diameter", "diff_diameter", "pipe_len_list",  "volume_list", "degree_list"]]
-        for i in pandas_data:
-            pandas_data[i] = pandas_data[i]/pandas_data[i].sum()
+        if pandas_data is None:
+            node_data = pd.read_csv(csv_path)
+        else:
+            node_data = pandas_data
+        node_data = node_data[
+            ["diff_demand", "diff_pressure", "ave_diameter", "diff_diameter", "pipe_len_list", "volume_list",
+             "degree_list"]]
+        for i in node_data:
+            node_data[i] = node_data[i] / node_data[i].sum()
         if to_csv is True:
-            pandas_data.to_csv(path_or_buf="normalization.csv")
-        return pandas_data
+            node_data.to_csv(path_or_buf="normalization.csv")
+        return node_data
+
+    @staticmethod
+    def data_evaluation(pandas_data = None, csv_path = None):
+        """
+        使用收集的数据进行权重的求解
+        :param pandas_data:  数据输入
+        :param csv_path csv文件的路径
+        :return:
+        """
+        if csv_path is None:
+            p = pandas_data
+        else:
+            p = pd.read_csv(csv_path)
+        zhibiao = ["diff_demand", "diff_pressure", "ave_diameter", "diff_diameter", "degree_list"]
+        p = p[zhibiao]
+        npl = p.values
+        phalanx = np.dot(npl.T, npl)
+        a, b = np.linalg.eig(phalanx)
+        b2 = b.T
+        weights_list = []
+        for i in b2[0]:     # 权重为第一行
+            weight = i/sum(b2[0])
+            weights_list.append(weight)
+        print(weights_list)
+        np.set_printoptions(suppress=True)
+        for i in zhibiao:
+            m = p[i]
+            print(i,"的均方差为",'{:.8f}'.format(m.std()))
+
+        '''
+        evaluation_result = p["diff_demand"] * weights_list[0] + \
+                            p["diff_pressure"] * weights_list[1] + \
+                            p["ave_diameter"] * weights_list[2] + \
+                            p["diff_diameter"] * weights_list[3] + \
+                            p["degree_list"]*weights_list[4]
+        print(evaluation_result)
+        print(type(evaluation_result))'''
 
 
 if __name__ == "__main__":
     inp1 = "F:/AWorkSpace/Python-Learning-Data/Net3.inp"
-    inp2 = "F:/AWorkSpace/Python-Learning-Data/ky8.inp"
+    inp2 = "F:/AWorkSpace/Python-Learning-Data/ky2.inp"
     inp3 = "F:/AWorkSpace/Python-Learning-Data/cs11021.inp"
     # result = FilterNode(inp2).compute_water_data()
     path_or_buf = "D:\\Git\\SensorPlacementInDistributionNetworks\\simulation\\test.csv"
     # p = pd.read_csv(path_or_buf)
     # print(p)
+    csv_path1 = "F:/AWorkSpace/Python-Learning-Data/FilterNode/cs_normalization.csv"
+    csv_path2 = "F:/AWorkSpace/Python-Learning-Data/FilterNode/cs_test.csv"
 
     fn = FilterNode(inp2)
     data1 = fn.compute_water_data()
-    data2 = fn.data_normalization(data1)
-    #wn = wntr.network.WaterNetworkModel(inp3)
-    #print(len(wn.node_name_list), len(wn.junction_name_list))
+    data2 = fn.data_normalization(pandas_data=data1)
+    fn.data_evaluation(pandas_data=data2)
+    # wn = wntr.network.WaterNetworkModel(inp3)
+    # print(len(wn.node_name_list), len(wn.junction_name_list))
