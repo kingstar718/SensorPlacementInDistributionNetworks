@@ -24,12 +24,13 @@ class EventDerivation(WaterQualitySim):
         end_time = 16*3600
         return super().water_quality(node_name, start_time, end_time, quality, rpt_file_path)
 
-    def compute_derivation(self, node_name, start_time, duration):
+    def compute_derivation(self, node_name, start_time, duration, is_json = False):
         """
         从主污染事件衍生次级事件
         :param node_name: 主事件节点名称
         :param start_time:  起始时间
         :param duration: 持续时间
+        :param is_json 是否输出为json
         :return:
         """
         water_quality = self.water_quality(node_name)
@@ -54,7 +55,7 @@ class EventDerivation(WaterQualitySim):
         #print(m_list)
         #print(M_list)
         #print(self.init_model().junction_name_list)
-        result_list = []
+        result_dirt = {}
         G = self.init_model().get_graph()
         G = G.to_directed()
         for i in m_list:
@@ -69,15 +70,17 @@ class EventDerivation(WaterQualitySim):
                 if node_dirt[i] < node_dirt[n]:
                     # 判断次级节点污染事件影响的节点在主事件的受到污染的时间是否要早  判断2
                     # 如果早了，则不是次级事件能影响到的节点
-                    diff_time = node_dirt[n] - node_dirt[i]
+                    diff_time = int(node_dirt[n] - node_dirt[i])
                     if diff_time <= duration:
                         i_dirt[n] = diff_time
             i_dirt[i] = 600     # 将当前节点加入
             # print("当前节点是 %s " % i , node_dirt[i], i_dirt)
-            result_list.append(i_dirt)
-        result_list = np.array(result_list)
-        print(result_list)
-        return result_list
+            result_dirt[i] = i_dirt
+        if is_json is True:     # 保存为json文件
+            result_json = json.dumps(result_dirt)
+            with open(node_name+".json","w") as f:
+                json.dump(result_json, f)
+        return result_dirt
 
 
 if __name__ == "__main__":
