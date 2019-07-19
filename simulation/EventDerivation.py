@@ -72,7 +72,7 @@ class EventDerivation(WaterQualitySim):
                     # 如果早了，则不是次级事件能影响到的节点
                     diff_time = int(node_dirt[n] - node_dirt[i])
                     if diff_time <= duration:
-                        i_dirt[n] = diff_time
+                        i_dirt[n] = diff_time/60
             i_dirt[i] = 600     # 将当前节点加入
             # print("当前节点是 %s " % i , node_dirt[i], i_dirt)
             result_dirt[i] = i_dirt
@@ -82,8 +82,19 @@ class EventDerivation(WaterQualitySim):
                 json.dump(result_json, f)
         return result_dirt
 
+    '''
+    函数未完成部分：1. 将各主事件模拟后衍生的次级污染事件的整合，即及整合方式
+                               2. 整合后如何与主事件进行整体输出
+                               3. 之前的并行模拟算法如何和现有的进行整合，一起输出。
+    '''
+
+    def compute_time_dirt(self, node_num_list, rpt_file="F:\AWorkSpace\data\ ", is_json=True):
+        return super().compute_time_dirt(node_num_list, rpt_file, is_json)
+
 
 if __name__ == "__main__":
     inp2 = "F:/AWorkSpace/Python-Learning-Data/ky2.inp"
     ed = EventDerivation(inp2)
-    result_list = quality_data = ed.compute_derivation("J-135", 28800, 28800)
+    #result_list = quality_data = ed.compute_derivation("J-135", 28800, 28800)
+    node_list = ['J-103','J-104','J-134','J-135','J-147']
+    r = ed.compute_time_dirt(node_list)
