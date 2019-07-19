@@ -140,18 +140,20 @@ class FilterNode():
             weights_list.append(weight)
         print("拉开档次法计算出来的权重：", weights_list)
         np.set_printoptions(suppress=True)
+        '''
         for i in zhibiao:
             m = p[i]
             print(i,"的均方差为",'{:.8f}'.format(m.std()))
-
         '''
+        # 权重*指标之后的综合评价值
         evaluation_result = p["diff_demand"] * weights_list[0] + \
                             p["diff_pressure"] * weights_list[1] + \
                             p["ave_diameter"] * weights_list[2] + \
                             p["diff_diameter"] * weights_list[3] + \
                             p["degree_list"]*weights_list[4]
-        print(evaluation_result)
-        print(type(evaluation_result))'''
+        new_p = p.copy()
+        new_p['evaluation_result'] = evaluation_result
+        return new_p
 
     @staticmethod
     def entropy_evaluation(pandas_data = None, csv_path = None):
@@ -190,8 +192,18 @@ class FilterNode():
             result_list.append(m)
         print("拉开熵值法计算出来的标准化的权重：", result_list)
 
+        # 权重*指标之后的综合评价值
+        evaluation_result = p["diff_demand"] * result_list[0] + \
+                            p["diff_pressure"] * result_list[1] + \
+                            p["ave_diameter"] * result_list[2] + \
+                            p["diff_diameter"] * result_list[3] + \
+                            p["degree_list"] * result_list[4]
+        new_p = p.copy()
+        new_p['evaluation_result'] = evaluation_result
+        return new_p
+
     @staticmethod
-    def get_rank(pandas_data, sort_feature):
+    def get_rank(pandas_data, sort_feature, start_pandas_data):
         """
         根据值获取索引series1[series1.values == 1].index
         根据索引获取值series1['a']
@@ -200,7 +212,7 @@ class FilterNode():
         :return: 排序后的index列表
         """
         p = pandas_data[sort_feature]   # 取出要排序的Series
-        p_name = pandas_data["node_name"]
+        p_name = start_pandas_data["node_name"]
         index_sort_list = p.sort_values(ascending=False).index      # 将排序后的索引拿出来
         node_list = []
         for i in index_sort_list:
@@ -208,21 +220,39 @@ class FilterNode():
         return node_list
 
 
+def test_ky2():
+    inp2 = "F:/AWorkSpace/Python-Learning-Data/ky2.inp"
+    # test ky2
+    fn_ky2 = FilterNode(inp2)
+    ky2_data = fn_ky2.compute_water_data()  # 初始得到的指标数据
+    nor_data = fn_ky2.data_normalization(pandas_data=ky2_data)  # 指标数据的标准化
+    lakadangci_data = fn_ky2.data_evaluation(pandas_data=nor_data)  # 拉开档次法计算各指标的权重
+    entropy_data = fn_ky2.entropy_evaluation(pandas_data=nor_data)  # 熵值法计算出的各指标权重
+    node_list1 = fn_ky2.get_rank(lakadangci_data, "evaluation_result", start_pandas_data=ky2_data)  # 第一个根据评价值排序的节点
+    node_list2 = fn_ky2.get_rank(entropy_data, "evaluation_result", start_pandas_data=ky2_data)  # 熵值法综合评价的节点排序
+    print(node_list1)
+    print(node_list2)
+
+
+def test_cs():
+    inp3 = "F:/AWorkSpace/Python-Learning-Data/cs11021.inp"
+    # test ky2
+    fn_cs = FilterNode(inp3)
+    csv_path1 = "F:/AWorkSpace/Python-Learning-Data/FilterNode/cs_normalization.csv"    # 标准化后的指标数据
+    csv_path2 = "F:/AWorkSpace/Python-Learning-Data/FilterNode/cs_test.csv"     # 原生的指标数据（需要里面的node_time）
+    cs_pd = pd.read_csv(csv_path2)
+    #ky2_data = fn_ky2.compute_water_data()  # 初始得到的指标数据
+    #nor_data = fn_cs.data_normalization(pandas_data=ky2_data)  # 指标数据的标准化
+    lakadangci_data = fn_cs.data_evaluation(csv_path=csv_path1)  # 拉开档次法计算各指标的权重
+    entropy_data = fn_cs.entropy_evaluation(csv_path=csv_path1)  # 熵值法计算出的各指标权重
+    node_list1 = fn_cs.get_rank(lakadangci_data, "evaluation_result", start_pandas_data=cs_pd)  # 第一个根据评价值排序的节点
+    node_list2 = fn_cs.get_rank(entropy_data, "evaluation_result", start_pandas_data=cs_pd)  # 熵值法综合评价的节点排序
+    print(node_list1)
+    print(node_list2)
+
+
 if __name__ == "__main__":
     inp1 = "F:/AWorkSpace/Python-Learning-Data/Net3.inp"
-    inp2 = "F:/AWorkSpace/Python-Learning-Data/ky2.inp"
-    inp3 = "F:/AWorkSpace/Python-Learning-Data/cs11021.inp"
-    # result = FilterNode(inp2).compute_water_data()
-    path_or_buf = "D:\\Git\\SensorPlacementInDistributionNetworks\\simulation\\test.csv"
-    # p = pd.read_csv(path_or_buf)
-    # print(p)
-    csv_path1 = "F:/AWorkSpace/Python-Learning-Data/FilterNode/cs_normalization.csv"
-    csv_path2 = "F:/AWorkSpace/Python-Learning-Data/FilterNode/cs_test.csv"
 
-    fn = FilterNode(inp2)
-    data1 = fn.compute_water_data()
-    data2 = fn.data_normalization(pandas_data=data1)
-    fn.data_evaluation(pandas_data=data2)
-    fn.entropy_evaluation(pandas_data=data2)
-    # node = fn.get_rank(data1, "degree_list")          # 根据值排序并得出以节点顺序存储
-    # wn = wntr.network.WaterNetworkModel(inp3)
+    test_ky2()
+    #test_cs()
