@@ -9,6 +9,7 @@ from estimate import estimate
 from population_init import population
 import matplotlib.pyplot as plt
 from json import load, loads
+from numpy import vstack, array, set_printoptions, transpose
 
 
 class SensorPlacement():
@@ -63,13 +64,13 @@ class SensorPlacement():
             crossover(pop, self.cross_probability)
             mutation(pop, self.mutation_probability, node_count-1)
             origin_pop = pop
-            temp_pop = np.vstack((copy_pop, origin_pop))
+            temp_pop = vstack((copy_pop, origin_pop))
             func_obj = MinMax2(temp_pop, node_dirt)
             pop = dominanceMain(temp_pop, func_obj)
             print("第 %d 次迭代" % i)
 
         # estimate(pop, func_obj)
-        pop_node = np.array(list(set([tuple(sorted(t)) for t in pop])))      # 个体按数值大小排序, 去重
+        pop_node = array(list(set([tuple(sorted(t)) for t in pop])))      # 个体按数值大小排序, 去重
         return pop_node
 
     def draw_node(self, pop_result):
@@ -82,10 +83,10 @@ class SensorPlacement():
             m = 1-i
             list1.append(m)
         # func_score = np.vstack((func_obj.objFun_1(), func_obj.objFun_2()))
-        func_score = np.vstack((func_obj.objFun_1(), list1))
-        print(np.transpose(func_score))
+        func_score = vstack((func_obj.objFun_1(), list1))
+        print(transpose(func_score))
         # funScore = np.transpose(func_score)
-        np.set_printoptions(suppress=True)
+        set_printoptions(suppress=True)
         x = func_score[0]
         y = func_score[1]
         plt.scatter(x, y)
