@@ -18,6 +18,9 @@
       <sourceFolder url="file://$MODULE_DIR$/../Python-Learning/tkinter" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../Python-Learning/spiderdemo" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../Python-Learning/SensorPlace" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../Python-Learning/networkx" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../Python-Learning/qgisdata" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../Python-Learning/scip" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
@@ -29,6 +32,8 @@
       <sourceFolder url="file://$MODULE_DIR$/timematrix/test" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/simulation" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/nsga2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/example" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/nodeimportance" isTestSource="false" />
     </content>
     <content url="file://D:/PythonProject">
       <sourceFolder url="file://D:/PythonProject" isTestSource="false" />

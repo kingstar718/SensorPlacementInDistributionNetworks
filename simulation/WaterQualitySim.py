@@ -163,7 +163,7 @@ class WaterQualitySim:
             sum_dirt.update(i.get())     # 从并行里拿出结果并进行字典整合
         if is_json is True:
             json_dirt = dumps(sum_dirt)
-            json_file_name = rpt_file + "waterQuality.json"
+            json_file_name = rpt_file + "waterQuality7589.json"
             with open(json_file_name, "w") as f:
                 dump(json_dirt, f)
         return sum_dirt
@@ -173,13 +173,10 @@ if __name__ == "__main__":
     inp1 = "F:/AWorkSpace/Python-Learning-Data/Net3.inp"
     inp2 = "F:/AWorkSpace/Python-Learning-Data/ky8.inp"
     inp3 = "F:/AWorkSpace/Python-Learning-Data/cs11021.inp"
-    wqs = WaterQualitySim(inp2 ,is_simple=True)
+    wqs = WaterQualitySim(inp3 ,is_simple=True)
     start = time()
-    simdort = wqs.parallel_compute_time_dirt(wqs.nodeList, is_json=False, parallel_num=3)
+    from test import test2
+    nodeList = test2()
+    print(test2())
+    simdort = wqs.parallel_compute_time_dirt(wqs.nodeList, rpt_file = "", is_json=True, parallel_num=3)
     print(time()-start)
-    # 2 -- 44s
-    # 3 - - 31s-35.5s-32.1s-31.7-31.7s
-    # 4 -- 38s-38.8s-38.7s
-    # 5 -- 38s
-    # 6 -- 34s-32.48s-34.1s
-    # 7 -- 30.9s-31.5s-30.9s-31.1s
