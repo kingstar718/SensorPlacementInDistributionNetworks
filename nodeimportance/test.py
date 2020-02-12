@@ -1,7 +1,6 @@
 from nodeImportance import NodeImportance
 from simulation.WaterQualitySim import WaterQualitySim
 
-
 cs = "F:/AWorkSpace/Python-Learning-Data/cs11021.inp"
 
 NI = NodeImportance(cs)
@@ -34,4 +33,9 @@ def test2():
 def test3():
     node_list = test2()
     wqs = WaterQualitySim(cs)
-    simdort = wqs.parallel_compute_time_dirt(node_list,is_json=False, parallel_num=3)
+
+    simdort = wqs.parallel_compute_time_dirt(node_list[0:4000], is_json=True, parallel_num=3)
+
+
+if __name__ == "__main__":
+    test3()
