@@ -19,7 +19,8 @@ class NodeImportance():
 
     def betweenness_centrality(self, number=None):
         """介数中心性"""
-        unsort_dirt = nx.betweenness_centrality(self.get_graph())
+        G = nx.Graph(self.get_graph())
+        unsort_dirt = nx.betweenness_centrality(G)
         return sort(unsort_dirt, number)
 
     def degree_centrality(self, number=None):
@@ -34,7 +35,8 @@ class NodeImportance():
 
     def eigenvector_centrality(self, number=None):
         """特征向量中心性"""
-        unsort_dirt = nx.eigenvector_centrality(self.get_graph(), tol=100)
+        G = nx.Graph(self.get_graph())
+        unsort_dirt = nx.eigenvector_centrality(G, tol=100)
         return sort(unsort_dirt, number)
 
     def HITS(self, number=None):
@@ -66,11 +68,11 @@ if __name__ == "__main__":
     Net3 = "D://Git//SensorPlacementInDistributionNetworks//example//Net3.inp"
     Ky2 = "F:\AWorkSpace\Python-Learning-Data\ky2.inp"
     cs = "F:\AWorkSpace\Python-Learning-Data\cs11021.inp"
-    NI = NodeImportance(Ky2)
-    bc = NI.betweenness_centrality()
-    dc = NI.degree_centrality()
-    cc = NI.closeness_centrality()
-    ec = NI.eigenvector_centrality()
-    hits = NI.HITS()
-    page_rank = NI.page_rank()
-    NI.test()
+    NI = NodeImportance(cs)
+    #bc = NI.betweenness_centrality()
+    #dc = NI.degree_centrality()
+    #cc = NI.closeness_centrality()
+    # ec = NI.eigenvector_centrality()
+    #hits = NI.HITS()
+    #page_rank = NI.page_rank()
+    # NI.test()

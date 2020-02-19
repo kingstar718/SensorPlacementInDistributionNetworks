@@ -5,8 +5,9 @@ import os
 
 
 cs = "F:/AWorkSpace/Python-Learning-Data/cs11021.inp"
+ky2 = "F:/AWorkSpace/Python-Learning-Data/ky2.inp"
 
-NI = NodeImportance(cs)
+NI = NodeImportance(ky2)
 
 def test():
     # bc = NI.betweenness_centrality()  # 耗时

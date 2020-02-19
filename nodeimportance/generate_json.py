@@ -7,20 +7,20 @@ cs = "F:/AWorkSpace/Python-Learning-Data/cs11021.inp"
 ky2 = "F:/AWorkSpace/Python-Learning-Data/ky2.inp"
 
 
-NI = NodeImportance(ky2)
+NI = NodeImportance(cs)
 
 
 def test1():
-    # bc = NI.betweenness_centrality(3000)  # 耗时
+    bc = NI.betweenness_centrality()  # 耗时
     dc = NI.degree_centrality()
     cc = NI.closeness_centrality()
-    # ec = NI.eigenvector_centrality()
+    ec = NI.eigenvector_centrality()
     hits = NI.HITS()
     page_rank = NI.page_rank()
     nx_dict = {}
     nx_dict.setdefault("dc", dc)
     nx_dict.setdefault("cc", cc)
-    # nx_dict.setdefault("ec", ec)
+    nx_dict.setdefault("ec", ec)
     nx_dict.setdefault("hits", hits)
     nx_dict.setdefault("pg", page_rank)
     print(nx_dict)
@@ -32,10 +32,11 @@ def test1():
 
 
 def test2():
-    bc = NI.betweenness_centrality()  # 耗时
+    bc = NI.betweenness_centrality(3000)  # 耗时
     # ec = NI.eigenvector_centrality()
+    return bc
 
 
 if __name__ == "__main__":
     # test1()
-    test2()
+    ec = test2()
