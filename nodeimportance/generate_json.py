@@ -18,6 +18,7 @@ def test1():
     hits = NI.HITS()
     page_rank = NI.page_rank()
     nx_dict = {}
+    nx_dict.setdefault("bc", dc)
     nx_dict.setdefault("dc", dc)
     nx_dict.setdefault("cc", cc)
     nx_dict.setdefault("ec", ec)
@@ -32,9 +33,9 @@ def test1():
 
 
 def test2():
-    bc = NI.betweenness_centrality(3000)  # 耗时
-    # ec = NI.eigenvector_centrality()
-    return bc
+    # bc = NI.betweenness_centrality(3000)  # 耗时
+    ec = NI.eigenvector_centrality()
+    return ec
 
 
 if __name__ == "__main__":

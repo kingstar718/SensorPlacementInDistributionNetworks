@@ -24,14 +24,17 @@ def read_json(path, centrality):
         # print(json_path)
         with open(json_path, "r") as f:
             node_json = json.load(f)
-            # print(node_json)
-            node_result_json.setdefault(i, node_json)
-        count += 1
-        print("已完成：" + str(count))
+            print(i)
+            # print((node_json).get(i))
+            print(dict(node_json).get(i))
+            node_result_json.setdefault(i, dict(node_json).get(i))
+        # count += 1
+        # print("已完成：" + str(count))
 
 
     # 将最后的大json文件存储起来
     reslut_path = "F://AWorkSpace//2020data//3000节点组合json//CS-" + centrality + ".json"
+    node_result_json = json.dumps(node_result_json)
     with open(reslut_path, "w") as f:
         json.dump(node_result_json, f)
     return node_result_json
@@ -39,4 +42,4 @@ def read_json(path, centrality):
 
 if __name__ == "__main__":
     path = "F://AWorkSpace//2020data//节点重要性排序数据//node_centrality_CS.json"
-    d = read_json(path, "pg")
+    d = read_json(path, "dc")

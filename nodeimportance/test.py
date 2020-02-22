@@ -89,10 +89,16 @@ def test7(path):
     print(len(node_list))
 
 
+def simKy2():
+    wqs = WaterQualitySim(ky2)
+    simdort = wqs.parallel_compute_time_dirt(wqs.nodeList, is_json=True, parallel_num=3)
+
+
 if __name__ == "__main__":
     json1 = "F:/AWorkSpace/2020data/waterQuality7.json"
     path = "F:/AWorkSpace/2020data/CSNodeJson/"
     # test3()
     # test4(json1)
-    s = test()
-    print(s)
+    #s = test()
+    #print(s)
+    simKy2()

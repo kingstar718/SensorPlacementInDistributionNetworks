@@ -66,10 +66,10 @@ def sort(un_dirt, count=None):
 
 if __name__ == "__main__":
     Net3 = "D://Git//SensorPlacementInDistributionNetworks//example//Net3.inp"
-    Ky2 = "F:\AWorkSpace\Python-Learning-Data\ky2.inp"
+    ky2 = "F:\AWorkSpace\Python-Learning-Data\ky2.inp"
     cs = "F:\AWorkSpace\Python-Learning-Data\cs11021.inp"
-    NI = NodeImportance(cs)
-    #bc = NI.betweenness_centrality()
+    NI = NodeImportance(ky2)
+    bc = NI.betweenness_centrality()
     #dc = NI.degree_centrality()
     #cc = NI.closeness_centrality()
     # ec = NI.eigenvector_centrality()
