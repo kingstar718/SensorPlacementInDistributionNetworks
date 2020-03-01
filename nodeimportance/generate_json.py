@@ -33,9 +33,18 @@ def test1():
 
 
 def test2():
-    # bc = NI.betweenness_centrality(3000)  # 耗时
-    ec = NI.eigenvector_centrality()
-    return ec
+    bc = NI.betweenness_centrality()  # 耗时
+    '''
+    ec = NI.eigenvector_centrality(3000)
+    ex_dict = {}
+    ex_dict.setdefault("ec",ec)
+    file_path = "F:/AWorkSpace/2020data/node_centrality_cs_ec.json"
+    # print(file_path)
+    with open(file_path, "w") as f:
+        json.dump(ex_dict, f)
+    print("存储完成！")
+    '''
+    return bc
 
 
 if __name__ == "__main__":

@@ -26,7 +26,7 @@ def test():
 
 
 def test2():
-    csv_file = "7589csv.csv"
+    csv_file = "F://水质监测点研究//2020新开始//7589csv.csv"
     with open(csv_file, 'r', encoding='utf-8') as f:
         lines = f.readlines()
         first_line = lines[0]
@@ -96,9 +96,10 @@ def simKy2():
 
 if __name__ == "__main__":
     json1 = "F:/AWorkSpace/2020data/waterQuality7.json"
-    path = "F:/AWorkSpace/2020data/CSNodeJson/"
+    path = "F:/AWorkSpace/2020data/节点模拟结果数据/"
     # test3()
     # test4(json1)
     #s = test()
     #print(s)
-    simKy2()
+    # simKy2()
+    listtt = test6(path)
