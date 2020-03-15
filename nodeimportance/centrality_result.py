@@ -41,5 +41,5 @@ def read_json(path, centrality):
 
 
 if __name__ == "__main__":
-    path = "F://AWorkSpace//2020data//节点重要性排序数据//node_centrality_CS.json"
-    d = read_json(path, "dc")
+    path = "F://AWorkSpace//2020data//节点重要性排序数据//node_centrality_cs_ec.json"
+    d = read_json(path, "ec")

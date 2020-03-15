@@ -5,9 +5,10 @@ import json
 
 cs = "F:/AWorkSpace/Python-Learning-Data/cs11021.inp"
 ky2 = "F:/AWorkSpace/Python-Learning-Data/ky2.inp"
+ky8 = "F:/AWorkSpace/Python-Learning-Data/ky8.inp"
 
 
-NI = NodeImportance(cs)
+NI = NodeImportance(ky8)
 
 
 def test1():
@@ -25,7 +26,7 @@ def test1():
     nx_dict.setdefault("hits", hits)
     nx_dict.setdefault("pg", page_rank)
     print(nx_dict)
-    file_path = "F:/AWorkSpace/2020data/node_centrality_ky2.json"
+    file_path = "F:/AWorkSpace/2020data/node_centrality_ky8.json"
     # print(file_path)
     with open(file_path, "w") as f:
         json.dump(nx_dict, f)
@@ -49,4 +50,4 @@ def test2():
 
 if __name__ == "__main__":
     # test1()
-    ec = test2()
+    test1()
