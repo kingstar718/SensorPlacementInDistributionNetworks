@@ -39,7 +39,7 @@ def no_file(inp_path):
     dirt_data = WaterQualitySimData(node_dirt=node_dirt).change_number(is_out=False)
 
     # 算法计算
-    sp = SensorPlacement(node_dirt=dirt_data, individuals_num=8, iterations_num=10)
+    sp = SensorPlacement(node_dirt=dirt_data, individuals_num=10, iterations_num=500)
 
     # 迭代主程序 产生结果
     """
@@ -58,4 +58,5 @@ def no_file(inp_path):
 
 if __name__ == "__main__":
     Net3_inp = "Net3.inp"
-    n = no_file(Net3_inp)
+    ky8_inp = "ky8.inp"
+    n = no_file(ky8_inp)

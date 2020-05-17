@@ -10,7 +10,7 @@ from population_init import population
 import matplotlib.pyplot as plt
 from json import load, loads
 from numpy import vstack, array, set_printoptions, transpose
-
+import time
 
 class SensorPlacement():
     def __init__(self, json_path=None, pop_size=500, individuals_num=100,
@@ -58,6 +58,8 @@ class SensorPlacement():
         node_dirt = self.read_json()
         func_obj = MinMax2(pop, node_dirt)
 
+        time_start = time.time()
+        timelist = []
         for i in range(self.iterations_num):
             copy_pop = pop.copy()
             selection(pop, func_obj)
@@ -68,7 +70,9 @@ class SensorPlacement():
             func_obj = MinMax2(temp_pop, node_dirt)
             pop = dominanceMain(temp_pop, func_obj)
             print("第 %d 次迭代" % i)
-
+            if(i%10==0):
+                timelist.append(time.time()-time_start)
+        print(timelist)
         # estimate(pop, func_obj)
         pop_node = array(list(set([tuple(sorted(t)) for t in pop])))      # 个体按数值大小排序, 去重
         return pop_node
